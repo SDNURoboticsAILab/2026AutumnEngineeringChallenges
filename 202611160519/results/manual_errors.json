@@ -1,0 +1,26 @@
+{
+  "image_rgb_20260727_151835.jpg": {
+    "pred_cls": "obstacle",
+    "pred_conf": 0.5738689303398132,
+    "wrong_kind": "extra",
+    "marked_at": "2026-09-27 15:20:34",
+    "cleared": true,
+    "cleared_streak": 3
+  },
+  "image_rgb_20260727_180228.jpg": {
+    "pred_cls": "football",
+    "pred_conf": 0.5484306812286377,
+    "wrong_kind": "extra",
+    "marked_at": "2026-09-27 14:01:03",
+    "cleared": true,
+    "cleared_streak": 3
+  },
+  "image_20260725_142038.jpg": {
+    "pred_cls": "football",
+    "pred_conf": 0.4128865897655487,
+    "wrong_kind": "extra",
+    "marked_at": "2026-09-27 16:04:17",
+    "cleared": true,
+    "cleared_streak": 3
+  }
+}
