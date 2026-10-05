@@ -1,0 +1,8 @@
+path: d:/Projects/YOLO/yolo_project/dataset   # 数据集根目录
+train: images/train                            # 相对 path
+val: images/val
+
+names:
+  0: obstacle
+  1: cola
+  2: football

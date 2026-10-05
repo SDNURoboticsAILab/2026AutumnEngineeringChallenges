@@ -1,0 +1,16 @@
+# 基于 YOLO 的机器人场景目标检测 — 依赖清单（本机实测通过版本）
+# 安装（清华镜像）:
+#   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+# 注意:
+#   1) torch 请按显卡安装: RTX 50 系(Blackwell)必须 cu128 轮子。
+#   2) Python 3.11 / CUDA 12.8 环境实测通过，其余版本未验证。
+
+torch==2.11.0
+ultralytics==8.4.155
+streamlit==1.64.0
+opencv-python==5.0.0.93
+numpy==2.4.6
+pandas==3.0.6
+pillow==12.3.0
+matplotlib==3.11.2
+PyYAML==6.0.3

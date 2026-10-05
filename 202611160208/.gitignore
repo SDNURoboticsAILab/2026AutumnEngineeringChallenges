@@ -1,0 +1,6 @@
+# 运行产物与大文件不入库
+__pycache__/
+*.pyc
+downloads/
+weights/
+annotation_progress.json
