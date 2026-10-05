@@ -1,0 +1,110 @@
+==============================================================================
+result/ 目录 —— 输出产物清单
+（目录规范：result/ 仅存放输出产物：统计表 / 曲线图 / 可视化图片 / 评估指标）
+==============================================================================
+
+【数据集统计】
+------------------------------------------------------------------------------
+  dataset_statistics.txt                          1.2 KB
+      数据集类别数量统计表（文本版）
+  dataset_statistics.csv                          0.2 KB
+      数据集类别数量统计表（CSV 版）
+  dataset_deep_stats.txt                          2.5 KB
+      数据集深度统计：目标尺度分布、每图目标数、类别共现
+  dataset_deep_stats.json                         2.1 KB
+      数据集深度统计（JSON 版）
+
+【训练指标与曲线】
+------------------------------------------------------------------------------
+  train_loss_curves.png                          97.4 KB
+      训练损失曲线（box / cls / dfl）
+  train_val_loss_curves.png                      73.8 KB
+      验证损失曲线
+  train_map_curves.png                           65.6 KB
+      验证集 mAP@0.5 与 mAP@0.5:0.95 曲线
+  train_pr_curves.png                            79.4 KB
+      验证集 Precision / Recall 曲线
+  train_results.png                             232.4 KB
+      Ultralytics 原生训练总览图（含全部损失与指标）
+  train_metrics_summary.txt                       0.6 KB
+      训练指标汇总（末轮各项数值）
+  train_metrics_per_epoch.json                   28.8 KB
+      逐 epoch 训练指标原始数据
+  train_summary.json                              1.1 KB
+      训练摘要（完成轮数、权重路径、末轮指标）
+  train_confusion_matrix.png                    116.3 KB
+      验证集混淆矩阵
+  train_confusion_matrix_normalized.png         124.5 KB
+      验证集归一化混淆矩阵
+  train_BoxPR_curve.png                         116.0 KB
+      验证集 Box Precision-Recall 曲线
+  train_BoxP_curve.png                          136.5 KB
+      验证集 Box Precision-Confidence 曲线
+  train_BoxR_curve.png                          151.5 KB
+      验证集 Box Recall-Confidence 曲线
+  train_BoxF1_curve.png                         163.6 KB
+      验证集 Box F1-Confidence 曲线
+  train_labels.jpg                              152.5 KB
+      训练集标签分布图
+  train_val_batch0_pred.jpg                     462.3 KB
+      验证集批量预测结果示例
+  train_val_batch0_labels.jpg                   447.5 KB
+      验证集批量真值标签示例
+  model_weights_info.json                         0.1 KB
+      模型权重文件信息（best.pt / last.pt 大小）
+
+【测试集评估指标】
+------------------------------------------------------------------------------
+  evaluation_metrics.txt                          0.9 KB
+      测试集评估指标（文本版）
+  evaluation_metrics.csv                          0.3 KB
+      测试集评估指标（CSV 版）
+  evaluation_metrics.json                         0.9 KB
+      测试集评估指标（JSON 版，含逐类别）
+  test_confusion_matrix.png                     118.3 KB
+      测试集混淆矩阵
+  test_confusion_matrix_normalized.png          139.3 KB
+      测试集归一化混淆矩阵
+  test_BoxPR_curve.png                          109.6 KB
+      测试集 Box Precision-Recall 曲线
+  test_BoxP_curve.png                           123.4 KB
+      测试集 Box Precision-Confidence 曲线
+  test_BoxR_curve.png                           151.8 KB
+      测试集 Box Recall-Confidence 曲线
+  test_BoxF1_curve.png                          161.0 KB
+      测试集 Box F1-Confidence 曲线
+  test_val_batch0_pred.jpg                      445.6 KB
+      测试集批量预测结果示例
+  test_val_batch0_labels.jpg                    442.7 KB
+      测试集批量真值标签示例
+
+【推理可视化】
+------------------------------------------------------------------------------
+  predictions/                                 40 个文件
+      test 测试集推理可视化图片目录（含目标框、类别名称、置信度）
+  predictions_per_image.csv                       3.6 KB
+      逐图检出目标数统计
+  predictions_detail.json                        66.6 KB
+      逐目标检出明细（类别、置信度、坐标）
+
+【标注检查】
+------------------------------------------------------------------------------
+  label_check/                                 32 个文件
+      人工标注可视化检查图（框渲染回原图）
+  prelabel_check/                              24 个文件
+      机器预标注可视化检查图（用于人工复核）
+
+【交付清单】
+------------------------------------------------------------------------------
+  project_tree.txt                              306.3 KB
+      完整项目目录树
+  run_screenshots_manifest.txt                    3.1 KB
+      run/ 截图清单及文字说明
+  result_files_manifest.txt                       5.4 KB
+      result/ 产物清单
+  final_summary.txt                               1.4 KB
+      整体交付摘要
+
+------------------------------------------------------------------------------
+已生成产物类别条目: 42
+==============================================================================

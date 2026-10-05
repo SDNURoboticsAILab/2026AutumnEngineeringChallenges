@@ -1,0 +1,101 @@
+{
+  "train": {
+    "images": 665,
+    "empty_labels": 12,
+    "objects": 1897,
+    "class_instances": {
+      "obstacle": 1303,
+      "football": 343,
+      "cola": 251
+    },
+    "objects_per_image": {
+      "min": 0,
+      "max": 10,
+      "mean": 2.853,
+      "median": 3
+    },
+    "box_area_ratio": {
+      "small_lt_1pct": 371,
+      "medium_1to10pct": 1304,
+      "large_ge_10pct": 222,
+      "mean": 0.04757,
+      "min": 0.00068,
+      "max": 0.27153
+    },
+    "cooccurrence": {
+      "cola": 84,
+      "cola+football": 43,
+      "cola+football+obstacle": 61,
+      "cola+obstacle": 51,
+      "football": 91,
+      "football+obstacle": 130,
+      "obstacle": 193
+    }
+  },
+  "val": {
+    "images": 190,
+    "empty_labels": 3,
+    "objects": 539,
+    "class_instances": {
+      "obstacle": 373,
+      "football": 98,
+      "cola": 68
+    },
+    "objects_per_image": {
+      "min": 0,
+      "max": 8,
+      "mean": 2.837,
+      "median": 2.0
+    },
+    "box_area_ratio": {
+      "small_lt_1pct": 87,
+      "medium_1to10pct": 376,
+      "large_ge_10pct": 76,
+      "mean": 0.05252,
+      "min": 0.00093,
+      "max": 0.21055
+    },
+    "cooccurrence": {
+      "cola": 16,
+      "cola+football": 16,
+      "cola+football+obstacle": 11,
+      "cola+obstacle": 20,
+      "football": 26,
+      "football+obstacle": 39,
+      "obstacle": 59
+    }
+  },
+  "test": {
+    "images": 94,
+    "empty_labels": 2,
+    "objects": 291,
+    "class_instances": {
+      "football": 61,
+      "obstacle": 195,
+      "cola": 35
+    },
+    "objects_per_image": {
+      "min": 0,
+      "max": 10,
+      "mean": 3.096,
+      "median": 3.0
+    },
+    "box_area_ratio": {
+      "small_lt_1pct": 56,
+      "medium_1to10pct": 205,
+      "large_ge_10pct": 30,
+      "mean": 0.04607,
+      "min": 0.00127,
+      "max": 0.20099
+    },
+    "cooccurrence": {
+      "cola": 8,
+      "cola+football": 4,
+      "cola+football+obstacle": 12,
+      "cola+obstacle": 9,
+      "football": 15,
+      "football+obstacle": 27,
+      "obstacle": 17
+    }
+  }
+}

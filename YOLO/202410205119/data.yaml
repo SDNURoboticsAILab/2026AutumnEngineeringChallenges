@@ -1,0 +1,21 @@
+# ============================================================================
+# YOLO 数据集配置 —— 机器人场景目标检测
+# 类别: 0 obstacle(障碍物) | 1 cola(可乐瓶) | 2 football(足球)
+# 划分: train : val : test = 7 : 2 : 1
+# ============================================================================
+# 目录约定（与 README.md「三、提交规范」建议结构一致）:
+#   dataset/images/{train,val}  +  dataset/labels/{train,val}   训练与验证集
+#   test/images                 +  test/labels                  测试集(Level 3 推理)
+# 使用相对路径，克隆到任意位置均可直接训练；
+# 如需指定绝对根目录，取消下一行 path 的注释并填写实际路径。
+# path: /absolute/path/to/this/project
+
+train: dataset/images/train
+val: dataset/images/val
+test: test/images
+
+nc: 3
+names:
+  0: obstacle
+  1: cola
+  2: football
