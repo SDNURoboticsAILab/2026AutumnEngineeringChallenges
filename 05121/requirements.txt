@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# YOLO 目标检测项目 — Python 依赖
+#
+# 本机环境：Windows + Intel Arc 核显（无 NVIDIA / CUDA），因此使用 CPU 版 PyTorch。
+# 版本对应关系（务必成对安装）：torch 2.9.1  <-->  torchvision 0.24.1
+#
+# 安装方式（在项目根目录 D:\YOLO 下执行）：
+#   1) 创建环境
+#      py -3.12 -m venv .venv
+#   2) 安装 PyTorch（必须指定 PyTorch 官方 CPU 源，PyPI 上没有 +cpu 版本）
+#      .\.venv\Scripts\python.exe -m pip install ^
+#          torch==2.9.1+cpu torchvision==0.24.1+cpu ^
+#          --index-url https://download.pytorch.org/whl/cpu
+#   3) 安装 Ultralytics（用 constraints.txt 锁定 CPU 版 torch，避免被换成 CUDA 版）
+#      .\.venv\Scripts\python.exe -m pip install --constraint constraints.txt ultralytics
+#
+# 或直接一键执行：  .\setup_env.ps1
+#
+# 完整锁定版本见 requirements.lock.txt（pip freeze 导出）。
+# ---------------------------------------------------------------------------
+
+torch==2.9.1+cpu
+torchvision==0.24.1+cpu
+ultralytics==8.4.163
+
+# ---------------------------------------------------------------------------
+# 可选依赖（按需安装，不影响训练；训练与推理只依赖上面三个）
+#
+#   Level 2 标注工具（三选一，推荐第 2 个）：
+#     pip install labelImg==1.8.6     # 需要 PyQt5，Python 3.12 上需实测
+#     X-AnyLabeling Windows 免安装版  # 推荐：带 AI 辅助标注
+#     Roboflow（在线，可直接导出 YOLO 格式）
+#
+#   Level 5 本地识别页面（二选一）：
+#     pip install gradio              # app.py 默认用这个
+#     pip install streamlit           # 备选
+#
+#   提交代码用的版本控制：
+#     Git for Windows                # 若不装，也可用 GitHub 网页上传 + 提 PR
+# ---------------------------------------------------------------------------
