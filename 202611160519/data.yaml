@@ -1,8 +1,0 @@
-path: D:/.科研枢纽/Van/EYE/202611160519/dataset
-train: images/train
-val: images/val
-
-names:
-  0: obstacle
-  1: cola
-  2: football

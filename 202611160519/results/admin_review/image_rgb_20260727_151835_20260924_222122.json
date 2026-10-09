@@ -1,7 +1,0 @@
-{
-  "time": "2026-09-24T22:21:22.383877",
-  "image": "D:/.科研枢纽/Van/EYE/raw/cola/image_rgb_20260727_151835.jpg",
-  "weights": "D:\\.科研枢纽\\Van\\EYE\\202611160519\\runs\\train\\exp\\weights\\best.pt",
-  "conf_threshold": 0.25,
-  "detections": []
-}
