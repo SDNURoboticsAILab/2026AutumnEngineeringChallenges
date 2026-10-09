@@ -1,0 +1,918 @@
+{
+  "cola_image_rgb_20260727_151835.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 5,
+    "last_check": "2026-09-25T08:23:35",
+    "admin_verified": false,
+    "history": [
+      {
+        "time": "2026-09-24T22:43:16",
+        "status": "manual_reject"
+      },
+      {
+        "time": "2026-09-24T23:45:53",
+        "status": "miss"
+      },
+      {
+        "time": "2026-09-25T08:01:13",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:01:24",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:56",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:57",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:58",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:58",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:58",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:59",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:21:59",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:06",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:07",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:07",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:07",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:08",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:08",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:08",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:09",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:12",
+        "status": "over_count"
+      },
+      {
+        "time": "2026-09-25T08:22:12",
+        "status": "over_count"
+      },
+      {
+        "time": "2026-09-25T08:22:19",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:21",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:22:25",
+        "status": "over_count"
+      },
+      {
+        "time": "2026-09-25T08:22:36",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:32",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:32",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:33",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:34",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:34",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:34",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:35",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T08:23:35",
+        "status": "unknown"
+      }
+    ],
+    "source": "",
+    "detections": []
+  },
+  "football_image_rgb_20260727_101657.jpg": {
+    "weak_label": "football",
+    "status": "ok",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T07:44:37",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T07:44:37",
+        "status": "ok"
+      }
+    ],
+    "source": "",
+    "detections": [
+      {
+        "cls_name": "football",
+        "conf": 0.5531693696975708
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5505250096321106
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5328868627548218
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4969470798969269
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4949099123477936
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4682674705982208
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4664076864719391
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4575563669204712
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3997994065284729
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.39265426993370056
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.37613803148269653
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3601205348968506
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.33914661407470703
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3091629147529602
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.26962175965309143
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.2695845663547516
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.2674988806247711
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.2656257152557373
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.25482937693595886
+      }
+    ]
+  },
+  "football_image_rgb_20260727_102431.jpg": {
+    "weak_label": "football",
+    "status": "ok",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T07:51:24",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T07:51:24",
+        "status": "ok"
+      }
+    ],
+    "source": "",
+    "detections": [
+      {
+        "cls_name": "football",
+        "conf": 0.7613139748573303
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7499833106994629
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7483363747596741
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7460576891899109
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7244095802307129
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7237532138824463
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.721571147441864
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7171043753623962
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7160330414772034
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7104870676994324
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7089408040046692
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7088422775268555
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7080891728401184
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.7078981399536133
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.696199357509613
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6939625144004822
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6851025819778442
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.665603756904602
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6087417006492615
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5754815340042114
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5263368487358093
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4937134385108948
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4666670858860016
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.46188822388648987
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4453311860561371
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3268652856349945
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3082314133644104
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.2625778913497925
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.25484567880630493
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.25381603837013245
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.252576619386673
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.25186148285865784
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.25085383653640747
+      }
+    ]
+  },
+  "obstacle_image_rgb_20260728_101833.jpg": {
+    "weak_label": "obstacle",
+    "status": "ok",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T07:51:24",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T07:51:24",
+        "status": "ok"
+      }
+    ],
+    "source": "",
+    "detections": []
+  },
+  "obstacle_image_rgb_20260728_102905.jpg": {
+    "weak_label": "obstacle",
+    "status": "ok",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T07:51:24",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T07:51:24",
+        "status": "ok"
+      }
+    ],
+    "source": "",
+    "detections": []
+  },
+  "football_image_rgb_20260727_115721.jpg": {
+    "weak_label": "football",
+    "status": "ok",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T07:51:24",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T07:51:24",
+        "status": "ok"
+      }
+    ],
+    "source": "",
+    "detections": [
+      {
+        "cls_name": "football",
+        "conf": 0.7018200755119324
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6978400349617004
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6952014565467834
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6935974359512329
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6925660371780396
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6891509890556335
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6759606003761292
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6664802432060242
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6659589409828186
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6537454724311829
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6481925845146179
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.641185462474823
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6247305274009705
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6034796237945557
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6025639176368713
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6022781729698181
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.6021689772605896
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5990069508552551
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5961865782737732
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5896582007408142
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5867159962654114
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5768967866897583
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5699148178100586
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5691243410110474
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5611250996589661
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.555695652961731
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5549210906028748
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5391751527786255
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5335189700126648
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.5333694219589233
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4964616894721985
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.44398602843284607
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.4326600134372711
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3794657588005066
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3424581289291382
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.33590075373649597
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3169330358505249
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.3022129535675049
+      },
+      {
+        "cls_name": "football",
+        "conf": 0.26519471406936646
+      }
+    ]
+  },
+  "football_image_rgb_20260727_115205.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 1,
+    "last_check": "2026-09-25T07:57:43",
+    "admin_verified": false,
+    "history": [
+      {
+        "time": "2026-09-25T07:57:29",
+        "status": "miss"
+      },
+      {
+        "time": "2026-09-25T07:57:43",
+        "status": "unknown"
+      }
+    ],
+    "source": "",
+    "detections": []
+  },
+  "aug_saturation_cola_image_rgb_20260727_152416.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:36",
+    "admin_verified": false,
+    "history": [
+      {
+        "time": "2026-09-25T13:57:57",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T13:58:08",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T13:59:55",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T13:59:56",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T13:59:56",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T13:59:57",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T13:59:57",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T14:02:33",
+        "status": "unknown"
+      },
+      {
+        "time": "2026-09-25T14:02:36",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_noise_football_image_rgb_20260727_102711.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:30",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:30",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_bright_dn_obstacle_image_rgb_20260727_143003.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:30",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:30",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_crop_football_image_rgb_20260727_115056.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:30",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:30",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_saturation_obstacle_image_rgb_20260728_102732.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:31",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:31",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_saturation_cola_image_rgb_20260727_163418.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:31",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:31",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "obstacle_image_rgb_20260728_102732.jpg": {
+    "weak_label": "obstacle",
+    "status": "ok",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:31",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:31",
+        "status": "ok"
+      }
+    ],
+    "detections": []
+  },
+  "aug_hue_football_image_rgb_20260727_095037.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:32",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:32",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_crop_football_image_rgb_20260727_095457.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:32",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:32",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_blur_obstacle_image_rgb_20260728_101800.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:32",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:32",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_blur_football_image_rgb_20260727_101241.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:32",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:32",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_hflip_football_image_rgb_20260727_094528.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:33",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:33",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_noise_obstacle_image_rgb_20260727_175804.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:33",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:33",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_bright_up_obstacle_image_rgb_20260727_180243.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:34",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:34",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_crop_cola_image_rgb_20260728_094409.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:34",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:34",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_crop_football_image_rgb_20260727_101829.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:34",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:34",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_saturation_cola_image_rgb_20260727_162845.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:35",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:35",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_contrast_football_image_rgb_20260727_101353.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:36",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:36",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_bright_up_obstacle_image_rgb_20260728_100823.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:36",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:36",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  },
+  "aug_blur_obstacle_image_rgb_20260728_103906.jpg": {
+    "weak_label": null,
+    "status": "unknown",
+    "wrong_count": 0,
+    "last_check": "2026-09-25T14:02:36",
+    "admin_verified": null,
+    "history": [
+      {
+        "time": "2026-09-25T14:02:36",
+        "status": "unknown"
+      }
+    ],
+    "detections": []
+  }
+}

@@ -1,0 +1,9 @@
+ultralytics==8.4.161
+torch==2.14.0
+torchvision
+opencv-python
+pillow
+pyyaml
+numpy
+psutil
+scikit-optimize==0.10.2
