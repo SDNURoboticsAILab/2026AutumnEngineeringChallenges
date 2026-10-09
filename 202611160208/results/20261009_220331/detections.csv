@@ -1,0 +1,8 @@
+﻿image,class,confidence
+cola_image_rgb_20260727_152129.jpg,cola,0.895
+image_rgb_20260727_094928.jpg,football,0.959
+image_rgb_20260727_175047.jpg,obstacle,0.962
+image_rgb_20260727_175047.jpg,obstacle,0.947
+image_rgb_20260727_175047.jpg,football,0.922
+image_rgb_20260727_175825.jpg,obstacle,0.550
+image_rgb_20260727_175825.jpg,obstacle,0.318

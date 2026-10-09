@@ -9,15 +9,15 @@
 
 ### 本项目实测配置环境
 
-| 项       | 配置                                              | 说明                                                      |
-| ------- | ----------------------------------------------- | ------------------------------------------------------- |
-| 操作系统    | Windows 11 64 位                                 | Windows 10 及以上                                          |
-| 内存      | 32GB                                            | ≥8GB                                                    |
-| 显卡      | RTX 5060 Laptop 8GB                             | NVIDIA 系列显卡                                             |
+| 项       | 配置                                              | 说明                                                        |
+| ------- | ----------------------------------------------- | --------------------------------------------------------- |
+| 操作系统    | Windows 11 64 位                                 | Windows 10 及以上                                            |
+| 内存      | 32GB                                            | ≥8GB                                                      |
+| 显卡      | RTX 5060 Laptop 8GB                             | NVIDIA 系列显卡                                               |
 | GPU 软件栈 | NVIDIA 驱动（本机实测 **616.92**）；PyTorch **cu128** 轮子 | RTX 50 系必须 cu128；驱动过旧或装 cu121/cu124 会报错。查看命令：`nvidia-smi` |
-| Python  | 3.11（Miniconda 虚拟环境 `yolo`）                     | 3.10/3.12 亦可                                            |
-| 磁盘      | ≥10GB 空闲                                        | 依赖约 6GB + 数据集 0.1GB + 训练结果约 2GB                      |
-| 关键依赖版本  | 见 requirements.txt                              |                                                         |
+| Python  | 3.11（Miniconda 虚拟环境 `yolo`）                     | 3.10/3.12 亦可                                              |
+| 磁盘      | ≥10GB 空闲                                        | 依赖约 6GB + 数据集 0.1GB + 训练结果约 2GB                           |
+| 关键依赖版本  | 见 requirements.txt                              |                                                           |
 
 ### 验证/演示环境（Level 1~5 截图与页面运行）
 
@@ -82,14 +82,14 @@
 
 ### 实验对比表（均在人工修正后的 val 上评估，公平可比）
 
-| 实验               | 训练数据                 | mAP50     | mAP50-95  | obstacle  | cola   | football |
-| ---------------- | -------------------- | --------- | --------- | --------- | ------ | -------- |
-| baseline-2       | 原始预标注                | 0.867†    | 0.827†    | 0.722†    | 0.942† | 0.938†   |
-| 同一模型重评           | （旧模型）                | 0.767     | 0.700     | 0.698     | 0.926  | 0.679    |
-| fixed_v1         | 预标注 train            | 0.867     | 0.728     | 0.880     | 0.954  | 0.768    |
+| 实验               | 训练数据                  | mAP50     | mAP50-95  | obstacle  | cola   | football |
+| ---------------- | --------------------- | --------- | --------- | --------- | ------ | -------- |
+| baseline-2       | 原始预标注                 | 0.867†    | 0.827†    | 0.722†    | 0.942† | 0.938†   |
+| 同一模型重评           | （旧模型）                 | 0.767     | 0.700     | 0.698     | 0.926  | 0.679    |
+| fixed_v1         | 预标注 train             | 0.867     | 0.728     | 0.880     | 0.954  | 0.768    |
 | fixed_v2         | 预标注 train（干扰物清洗删 0 框） | 0.847     | 0.742     | 0.777     | 0.933  | 0.832    |
-| fixed_v3         | v2 数据跑满100轮          | 0.829     | 0.744     | 0.761     | 0.962  | 0.763    |
-| **fixed_v4（最终）** | **+颜色审计清洗(287+19框)** | **0.888** | **0.783** | **0.900** | 0.945  | 0.818    |
+| fixed_v3         | v2 数据跑满100轮           | 0.829     | 0.744     | 0.761     | 0.962  | 0.763    |
+| **fixed_v4（最终）** | **+颜色审计清洗(287+19框)**  | **0.888** | **0.783** | **0.900** | 0.945  | 0.818    |
 
 † 在含错误的旧 val 标签上评估，虚高不可直接比较——这一现象本身是"标注质量决定指标可信度"的实证（见问题 #2）。
 
@@ -99,13 +99,13 @@
 
 ![](screenshots/level3/level3-2.png)
 ![](screenshots/level3/level3-1.png)
-![](yolo_project/runs/exp_20261004_1813/results.png)
-![](yolo_project/runs/exp_20261004_1813/confusion_matrix.png)
+![](runs/exp_20261004_1813/results.png)
+![](runs/exp_20261004_1813/confusion_matrix.png)
 ![](screenshots/level3/level3-3.png)
 
 ## 六、图片检测（Level 4）
 
-`yolo_project/predict.py` 加载 fixed_v4 权重（`runs/fixed_v4/weights/best.pt`），对训练集之外图片推理，结果含目标框+类别名+置信度，并输出 `detections.csv` 明细。
+`predict.py` 加载 fixed_v4 权重（`runs/fixed_v4/weights/best.pt`），对训练集之外图片推理，结果含目标框+类别名+置信度，并输出 `detections.csv` 明细。
 
 - 单目标 / 多目标 / 检测效果图：
 
@@ -117,9 +117,9 @@
 
 ## 七、本地检测页面（Level 5）
 
-`yolo_project/app.py`（Streamlit，约 80 行）：上传图片 → 模型推理 → 并排显示原图/结果图 + 目标表格（类别/置信度/位置）+ 侧栏置信度滑条实时调节。
+`app.py`（Streamlit，约 80 行）：上传图片 → 模型推理 → 并排显示原图/结果图 + 目标表格（类别/置信度/位置）+ 侧栏置信度滑条实时调节。
 
-- 启动：`streamlit run yolo_project/app.py` 或双击 `启动页面.bat`；
+- 启动：`streamlit run app.py` 或双击 `启动页面.bat`；
 - 实测：conf 0.25→0.5 时低置信误检正确被过滤。
 
 ![](screenshots/level5/level5-1.png)
@@ -133,7 +133,7 @@
 1. **RTX 5060 装不上 GPU 版 PyTorch**：50 系 Blackwell 架构需 CUDA 12.8+ 轮子（cu121 报 no kernel image）→ 锁定 cu128 离线安装，三条命令验证（版本/可用性/真实矩阵运算）。
 2. **"obstacle" 抽象词零检出**：YOLO-World 无法匹配功能概念词 → 拆解为具体外观词（blue box/cyan box…）；同类教训 "cola bottle"→"coke/dark/plastic bottle"、"exercise ball" 误匹配黑白足球（叠加 HSV 橙色校验解决）。
 3. **类别定义踩坑**：按词义把 obstacle 理解为"所有挡路物"标注了椅子，后续从复杂度考虑并且查看图片后确定为蓝盒子 → 教训：**动手标注前先弄清类别在这个数据集里的视觉所指**，这个踩坑也导致了后续的训练数据受到影响，导致obstacle类别识别不如另外两个类别的识别，当然调试问题的过程也加深了相关知识的理解。
-4. **labelImg 随机闪退**：1.8.6 版与 Python 3.11+Windows 深层不兼容（Qt5Core.dll 0xc0000409 原生层崩溃，设置兼容、管理员权限等无效）→ 通过 Windows 事件日志定位根因后果断止损，自研 tkinter 标注修正器（python直接读写 YOLO txt）。
+4. **labelImg 随机闪退**：1.8.6 版与 Python 3.11+Windows 深层不兼容（Qt5Core.dll 0xc0000409 原生层崩溃，设置兼容、管理员权限等无效）→ 通过 Windows 事件日志定位根因后果断止损，使用 tkinter 标注修正器（python直接读写 YOLO txt）。
 5. **GitHub 资源下载被重置**：走 `gh-proxy.com` 镜像前缀。
 6. **旧模型指标虚高**：baseline 0.867 在修正标签上重评仅 0.767 → 建立"评估集必须先人工修正"的规范。
 7. **小数据集训练随机性**：fixed_v1 obstacle 0.880 无法复现（v3 同数据 0.761）→ 认知：单次实验指标波动 ±5~10 点，重要结论需多次训练验证。
@@ -150,15 +150,13 @@
 ## 十、文件清单
 
 ```
-yolo_project/
+202611160208/
 ├── train.py / predict.py / app.py / data.yaml   # 训练/推理/页面代码与数据集配置
-├── dataset/          # images+labels(train/val) + classes.txt
-├── runs/             # baseline-2 / fixed_v1~v4 / exp 实验记录（最终权重 fixed_v4/weights/best.pt）
+├── dataset/labels/   # YOLO 标签（train/val；图片为实验室提供数据，未重复入库）
+├── runs/             # fixed_v4 最终实验 + exp_20261004_1813 实验记录（最终权重 fixed_v4/weights/best.pt）
 ├── results/          # 检测输出图 + detections.csv
-└── qa/               # 标签清洗质检可视化
-scripts/              # 数据体检/划分/预标注/清洗/质检/统计/标注器等 11 个脚本
-new_images/           # 训练集之外的自拍测试图（Level 4 输入）
-screenshots/          # Level 1~5 验证截图
-启动标注.bat / 启动训练.bat / 启动检测.bat / 启动页面.bat   # 一键入口
-requirements.txt / README.md / report.md
+├── new_images/       # 测试图（Level 4 输入）
+├── screenshots/      # Level 1~5 验证截图
+├── predefined_classes.txt / split_manifest.csv   # 标注类别 / 数据划分清单
+└── requirements.txt / README.md / report.md
 ```

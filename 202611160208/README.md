@@ -12,27 +12,31 @@
 
 ## 快速开始
 
-激活环境：`conda activate yolo`（或直接双击下方 bat，默认调用 `%USERPROFILE%\miniconda3\envs\yolo`）。
+激活环境：`conda activate yolo`。
 
-| 操作     | 方式                                                        |
-| ------ | --------------------------------------------------------- |
-| 训练     | `python yolo_project/train.py --name exp1` 或双击 `启动训练.bat` |
-| 检测新图片  | 图片放入 `new_images/`，双击 `启动检测.bat`                          |
-| 本地检测页面 | 双击 `启动页面.bat`，浏览器自动打开 http://localhost:8501               |
-| 标注修正   | 双击 `启动标注.bat`（val 集），传参 train 处理训练集                       |
+| 操作     | 方式                                                           |
+| ------ | ------------------------------------------------------------ |
+| 训练     | `python train.py --name exp1`                                |
+| 检测新图片  | 图片放入 `new_images/`，运行 `python predict.py`（`--conf 0.4` 可调阈值） |
+| 本地检测页面 | `streamlit run app.py`，浏览器打开 http://localhost:8501           |
 
 ## 说明
 
-- 最终模型权重：`yolo_project/runs/fixed_v4/weights/best.pt`（mAP50 = 0.888）
-- `yolo_project/data.yaml` 中 `path` 为本机绝对路径，**换机运行前请改成本机的 dataset 目录**
+- 最终模型权重：`runs/fixed_v4/weights/best.pt`（mAP50 = 0.888，已随仓库提交，克隆后可直接推理）
+- `data.yaml` 中 `path` 使用相对路径（`dataset`），无需修改即可运行
+- 数据集图片未重复提交（原始图片见仓库根目录 `obstacle/cola/football`），本目录保留完整 `dataset/labels` 标签与 `split_manifest.csv` 划分清单，按 report.md「数据集整理」一节可完整复现数据集
 - 预标注/训练脚本需要预训练权重 `downloads/yolov8s-worldv2.pt`、`downloads/yolov8s.pt`（重量级文件未入库，下载方式见 report.md 问题 #5）
 
 ## 目录结构
 
 ```
-yolo_project/          # 训练/推理/页面代码 + 数据集 + 实验记录
-scripts/               # 数据体检/划分/预标注/清洗/质检/标注器等 11 个脚本
-new_images/            # 训练集之外的测试图
-screenshots/           # Level 1~5 验证截图
-report.md              # 项目报告
+202611160208/
+├── train.py / predict.py / app.py / data.yaml   # 训练/推理/页面代码与数据集配置
+├── dataset/labels/   # YOLO 标签（train/val，939 个）
+├── runs/             # fixed_v4 最终实验 + exp_20261004_1813 实验记录（最终权重 fixed_v4/weights/best.pt）
+├── results/          # 检测输出图 + detections.csv
+├── new_images/       # 测试图
+├── screenshots/      # Level 1~5 验证截图
+├── predefined_classes.txt / split_manifest.csv   # 标注类别 / 数据划分清单
+└── requirements.txt / README.md / report.md
 ```

@@ -1,6 +1,5 @@
-# 运行产物与大文件不入库
+# 运行产物不入库（最终权重 best.pt 已随仓库提交）
 __pycache__/
 *.pyc
 downloads/
-weights/
 annotation_progress.json
