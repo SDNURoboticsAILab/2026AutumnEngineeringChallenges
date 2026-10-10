@@ -1,0 +1,11 @@
+# YOLO11 目标检测数据集配置（人工标注数据集 dataset/）
+# path 相对本文件所在目录（即 YOLO/202611160509/）解析，克隆后无需修改
+path: dataset
+train: images/train
+val: images/val
+
+# 类别：0=cola 可乐, 1=football 足球, 2=obstacle 障碍物
+names:
+  0: cola
+  1: football
+  2: obstacle
