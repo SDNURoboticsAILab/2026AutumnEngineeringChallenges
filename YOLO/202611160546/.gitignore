@@ -1,0 +1,15 @@
+# 提交时排除的内容（不是删掉，只是不进 Git 仓库）
+
+# 原始图片 113MB，体积太大不重复入库。
+# 图片由实验室提供（仓库 YOLO/obstacle、cola、football），
+# 克隆后执行 python prepare_dataset.py --src-root .. 即可完整重建，
+# 划分结果由随机种子 42 固定，与提交时完全一致。
+dataset/images/
+
+# 训练中途的检查点，带优化器状态 24MB，推理用不到（最终权重是 best.pt）
+runs/**/weights/last.pt
+
+# 运行时产生的缓存
+__pycache__/
+*.pyc
+*.cache
