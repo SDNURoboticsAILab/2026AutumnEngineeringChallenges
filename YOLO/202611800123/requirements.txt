@@ -1,0 +1,9 @@
+ultralytics==8.4.174
+torch==2.14.1
+torchvision==0.29.1
+opencv-python
+pillow
+pyyaml
+matplotlib
+pandas
+seaborn
