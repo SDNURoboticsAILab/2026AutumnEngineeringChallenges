@@ -1,0 +1,11 @@
+# YOLO 数据集配置
+# path 用相对路径，克隆仓库后无需修改即可训练
+path: dataset
+train: images/train
+val: images/val
+
+# 类别编号与名称（与标注时的编号严格一致）
+names:
+  0: obstacle   # 蓝色泡沫障碍箱
+  1: cola       # 黑色可乐瓶
+  2: football   # 黑白足球

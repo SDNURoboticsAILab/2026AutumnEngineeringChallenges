@@ -1,0 +1,21 @@
+# 本项目实测通过的依赖版本（Windows / Python 3.14 / CPU 训练）
+# 安装：pip install -r requirements.txt
+#
+# 说明：
+#   - torch / torchvision 用的是 CPU 版轮子。本机显卡为 AMD RX 7700 XT，没有 CUDA，
+#     所以不需要（也装不了）CUDA 版本。如果你的机器是 NVIDIA 显卡，请按官网命令
+#     换成对应的 CUDA 版本，训练会快很多。
+#   - ultralytics 已经依赖 opencv-python，这里额外装 headless 版避免 GUI 依赖问题。
+
+torch==2.14.1
+torchvision==0.29.1
+ultralytics==8.4.175
+opencv-python-headless==5.0.0.93
+numpy==2.5.3
+pillow==12.3.0
+PyYAML==6.0.3
+pandas==3.0.6
+matplotlib==3.11.2
+seaborn==0.13.2
+streamlit==1.65.0
+tqdm==4.70.1
