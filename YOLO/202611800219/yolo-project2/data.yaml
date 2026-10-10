@@ -1,0 +1,10 @@
+path: ./dataset
+train: images/train
+val: images/val
+nc: 3
+names:
+  0: cola
+  1: football
+  2: obstacle
+
+  
