@@ -1,0 +1,9 @@
+path: D:/大学四年/代码文件/deep learning/ultralytics-8.3.163/datasets/robot
+train: images/train
+val: images/val
+test:
+
+names:
+  0: cola
+  1: football
+  2: obstacle
