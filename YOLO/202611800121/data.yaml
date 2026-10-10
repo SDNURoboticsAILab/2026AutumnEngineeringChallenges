@@ -1,9 +1,0 @@
-path: C:/Users/Chen1/Desktop/yolo_project/dataset
-train: images/train
-val: images/val
-
-nc: 3
-names:
-  0: obstacle
-  1: cola
-  2: football

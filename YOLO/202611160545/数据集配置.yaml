@@ -1,7 +1,0 @@
-path: D:/YOLO-Challenge/dataset
-train: images/train
-val: images/val
-names:
-  0: obstacle
-  1: cola
-  2: football

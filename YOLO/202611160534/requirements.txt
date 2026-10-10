@@ -1,7 +1,0 @@
-ultralytics
-torch
-torchvision
-streamlit
-opencv-python
-pillow
-matplotlib
