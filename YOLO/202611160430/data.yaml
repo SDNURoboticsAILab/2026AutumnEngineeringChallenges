@@ -1,0 +1,7 @@
+path: C:/Users/hy/yolo_project/datasets 
+train: images/train 
+val: images/val 
+names: 
+  0: obstacle 
+  1: cola 
+  2: football 
