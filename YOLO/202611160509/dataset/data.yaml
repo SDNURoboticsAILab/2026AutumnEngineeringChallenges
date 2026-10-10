@@ -1,0 +1,10 @@
+# YOLO11 训练数据集配置（人工标注 xuezha 数据集，train 66 / val 28）
+# path 相对本文件所在目录（dataset/）解析，克隆后无需修改
+path: .
+train: images/train
+val: images/val
+
+names:
+  0: cola
+  1: football
+  2: obstacle

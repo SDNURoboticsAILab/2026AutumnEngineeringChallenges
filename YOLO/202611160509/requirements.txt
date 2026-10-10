@@ -1,0 +1,14 @@
+# 项目依赖
+# 注意：torch 必须安装 CUDA 版本（支持 RTX 50 系列 GPU），
+#       不要从默认 PyPI 安装（会得到 CPU 版）。
+
+# --- 安装命令（Windows） ---
+# 1) 安装 CUDA 版 PyTorch（约 3GB）：
+#    pip install torch==2.11.0+cu128 torchvision==0.26.0+cu128 --index-url https://download.pytorch.org/whl/cu128
+# 2) 安装 ultralytics：
+#    pip install ultralytics==8.3.163
+# 3) 其他依赖（numpy、opencv-python 等）由 ultralytics 自动安装
+
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+ultralytics==8.3.163

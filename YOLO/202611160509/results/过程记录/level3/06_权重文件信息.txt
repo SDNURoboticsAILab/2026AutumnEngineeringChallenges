@@ -1,0 +1,37 @@
+============================================================
+训练得到的模型权重文件信息
+============================================================
+
+[best.pt]
+  完整路径   : E:\deeplearning\yolo project\runs\train_submit\weights\best.pt
+  文件大小   : 5458906 字节 (5.21 MB)
+  修改时间   : 2026-10-05 22:50:25
+  MD5 校验值 : 51acd04d862d6ae8218e609d019d029c
+
+[last.pt]
+  完整路径   : E:\deeplearning\yolo project\runs\train_submit\weights\last.pt
+  文件大小   : 5458906 字节 (5.21 MB)
+  修改时间   : 2026-10-05 22:50:25
+  MD5 校验值 : 799a49ce5eba358b23371ee7cc8ed1c6
+
+------------------------------------------------------------
+模型结构摘要（best.pt，由 ultralytics 加载）
+------------------------------------------------------------
+  模型类型   : detect 检测
+  类别       : {0: 'cola', 1: 'football', 2: 'obstacle'}
+  类别数量   : 3
+  推理尺寸   : 640
+  结构信息   : (181, 2590425, 0, 6.440448)
+
+训练配置（train_args）关键项：
+    epochs = 50
+    batch = 16
+    imgsz = 640
+    device = 0
+    workers = 0
+    optimizer = auto
+    lr0 = 0.01
+    data = E:\deeplearning\yolo project\xuezha\data.yaml
+    name = train_submit
+    model = E:\deeplearning\ultralytics-8.3.163\yolo11n.pt
+    seed = 0

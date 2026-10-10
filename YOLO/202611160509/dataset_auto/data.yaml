@@ -1,0 +1,10 @@
+# YOLO11 自动标注数据集配置（best.pt 自动标注，train 678 / val 169）
+# path 相对本文件所在目录（dataset_auto/）解析，克隆后无需修改
+path: .
+train: images/train
+val: images/val
+
+names:
+  0: cola
+  1: football
+  2: obstacle
