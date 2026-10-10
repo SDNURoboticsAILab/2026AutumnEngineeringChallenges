@@ -1,8 +1,0 @@
-path: .
-train: dataset
-val: dataset
-names:
-    0: obstacle
-    1: cola
-    2: football
-   
