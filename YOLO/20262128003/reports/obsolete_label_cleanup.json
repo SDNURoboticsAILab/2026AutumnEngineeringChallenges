@@ -1,0 +1,11 @@
+{
+  "moved_count": 0,
+  "moved_geometry_mismatch_count": 0,
+  "moved": [],
+  "kept_count": 0,
+  "kept": [],
+  "classes_moved": [
+    "reports\\label_backup\\obsolete_original_names\\classes_dataset_train.1.txt",
+    "reports\\label_backup\\obsolete_original_names\\classes_dataset_val.1.txt"
+  ]
+}

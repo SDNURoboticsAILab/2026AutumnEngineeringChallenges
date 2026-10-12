@@ -1,0 +1,41 @@
+# 基于 YOLO 的机器人场景目标检测 —— 运行环境依赖
+#
+# 实测环境：Windows 11 64 位 + Python 3.11.9 + NVIDIA RTX 3060 Laptop (6 GB, sm_86) + CUDA 11.8
+# 安装方式（虚拟环境位于仓库外层 .venv-yolo，未污染系统 Python）：
+#
+#   1) 先装 PyTorch 的 CUDA 11.8 版本。
+#      必须显式指定 PyTorch 官方源，否则 pip 装到的 +cpu 版本无法使用 GPU：
+#
+#      pip install torch==2.7.1+cu118 torchvision==0.22.1+cu118 ^
+#          --index-url https://download.pytorch.org/whl/cu118
+#
+#   2) 再装其余依赖（国内可用清华镜像加速）：
+#
+#      pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+#   3) 验证环境（会实算 GPU 前向/反向、NMS 和一次 YOLO 推理）：
+#
+#      python validate_labels.py   # 数据标签检查
+#      python ../../environment/check_environment.py
+
+# ---- 训练与推理 ----
+ultralytics==8.4.155
+opencv-python==5.0.0.93
+numpy==2.4.6
+matplotlib==3.11.2
+pillow==12.3.0
+PyYAML==6.0.3
+polars==1.44.2
+
+# ---- 数据标注（Level 2，labelImg 为 Qt 图形程序，依赖 PyQt5）----
+labelImg==1.8.6
+PyQt5==5.15.11
+
+# ---- 本地图片识别页面（Level 5）----
+# 安装前建议先试算，确认不会改动 torch / numpy / pillow 等已装包：
+#   pip install streamlit --dry-run -i https://pypi.tuna.tsinghua.edu.cn/simple
+streamlit==1.64.0
+
+# ---- PyTorch（若已按上面第 1 步从 cu118 源安装，这两行可跳过）----
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118

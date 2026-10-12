@@ -1,0 +1,9 @@
+# 数据集根目录直接由本文件所在目录推导（不写 path），
+# 这样无论从哪个工作目录运行 train.py / predict.py 都能定位到图片。
+train: dataset/images/train
+val: dataset/images/val
+
+names:
+  0: obstacle
+  1: cola
+  2: football

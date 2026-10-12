@@ -1,0 +1,12 @@
+{
+  "migrated": {
+    "train": 117,
+    "val": 16,
+    "test": 14
+  },
+  "kept_existing": [
+    "dataset/labels/train/cola_0001.txt"
+  ],
+  "corrected_class_0_to_1": 6,
+  "unmatched": []
+}
