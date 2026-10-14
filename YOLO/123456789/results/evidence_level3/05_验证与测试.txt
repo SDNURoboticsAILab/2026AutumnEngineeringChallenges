@@ -1,0 +1,46 @@
+=== 使用自己训练的模型完成验证与测试（Level 3 要求 5）===
+
+[A] 验证：在验证集上评估 runs/detect/train/weights/best.pt
+
+Speed: 0.4ms preprocess, 3.4ms inference, 0.0ms loss, 1.6ms postprocess per image
+Results saved to [1mD:\\git \yolo_project\runs\detect\train[0m
+                   all        189        243      0.832      0.781      0.825       0.71
+              obstacle         28         28      0.841      0.565      0.647      0.541
+                  cola         59         59      0.856      0.932      0.962      0.909
+              football        133        156      0.798      0.846      0.866      0.678
+Speed: 1.1ms preprocess, 4.3ms inference, 0.0ms loss, 1.4ms postprocess per image
+Results saved to [1mD:\\git \yolo_project\runs\detect\val[0m
+recall   : 0.7811
+  obstacle  mAP50=0.6470  mAP50-95=0.5413
+  cola      mAP50=0.9619  mAP50-95=0.9090
+  football  mAP50=0.8660  mAP50-95=0.6783
+
+【路径说明】终端日志在抓取过程中丢失了中文目录名（“研一”“练习”），
+  因此上文出现的 “D:\git \yolo_project\...” 的真实路径为：
+    D:\研一\git 练习\yolo_project\data.yaml
+  该路径以 runs/detect/train/args.yaml 中的 data 字段为准。
+
+[B] 测试：对 test_images/ 里的图片推理
+
+image 1/3 D:\\git \yolo_project\test_images\image_rgb_20260727_095027.jpg: 480x640 1 football, 6.6ms
+image 2/3 D:\\git \yolo_project\test_images\image_rgb_20260727_101037.jpg: 480x640 2 footballs, 7.4ms
+image 3/3 D:\\git \yolo_project\test_images\image_rgb_20260727_103944.jpg: 480x640 2 footballs, 6.7ms
+Speed: 9.4ms preprocess, 6.9ms inference, 3.8ms postprocess per image at shape (1, 3, 480, 640)
+Results saved to [1mD:\\git \yolo_project\results\predict[0m
+------------------------------------------------------------
+image_rgb_20260727_095027.jpg
+    football   conf=0.971  box=[294.0, 227.7, 376.4, 308.3]
+image_rgb_20260727_101037.jpg
+    football   conf=0.960  box=[400.9, 209.2, 453.4, 259.3]
+    football   conf=0.395  box=[151.5, 190.3, 198.6, 234.1]
+image_rgb_20260727_103944.jpg
+    football   conf=0.911  box=[166.8, 170.4, 198.4, 204.5]
+    football   conf=0.253  box=[180.6, 162.9, 198.0, 171.9]
+结果图片目录: D:\研一\git 练习\yolo_project\results\predict
+
+【关于 [B] 测试图片的说明】
+  本节 [B] 使用的 3 张图片（image_rgb_20260727_095027 / 101037 / 103944）
+  取自 dataset/images/val 划分，不在训练集（train）内，符合题目“训练集之外的新图片”。
+  但它们仍属于本项目数据集、并参与了验证与选模型，因此结果偏乐观。
+  为给出“从未参与训练与验证”的严格评测，另将 6 张图片移出数据集并重新训练模型，
+  评测过程与结果见 results/evidence_level4/02_对新图片推理.txt。

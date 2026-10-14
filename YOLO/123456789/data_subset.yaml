@@ -1,0 +1,9 @@
+﻿# 只使用“已标注图片”的子集配置，用于先跑通流程（冒烟测试）
+path: ./dataset
+train: ../labeled_train.txt
+val: ../labeled_val.txt
+
+names:
+  0: obstacle
+  1: cola
+  2: football

@@ -1,0 +1,75 @@
+=== 训练结束与最终验证（Level 3 要求 1、5）===
+
+                   all        189        243      0.841       0.79      0.815      0.703
+                   all        189        243      0.792      0.795      0.809      0.699
+                   all        189        243      0.801      0.788      0.809      0.696
+                   all        189        243      0.783      0.816      0.808      0.697
+                   all        189        243      0.791      0.826      0.804      0.696
+                   all        189        243      0.783      0.812      0.796      0.692
+                   all        189        243       0.77      0.804      0.797      0.692
+                   all        189        243      0.848      0.738      0.798      0.695
+                   all        189        243      0.768      0.803      0.803      0.699
+                   all        189        243      0.837       0.74      0.805        0.7
+100 epochs completed in 0.428 hours.
+Optimizer stripped from D:\\git \yolo_project\runs\detect\train\weights\last.pt, 5.5MB
+Optimizer stripped from D:\\git \yolo_project\runs\detect\train\weights\best.pt, 5.5MB
+Validating D:\\git \yolo_project\runs\detect\train\weights\best.pt...
+                   all        189        243      0.832      0.781      0.825       0.71
+              obstacle         28         28      0.841      0.565      0.647      0.541
+                  cola         59         59      0.856      0.932      0.962      0.909
+              football        133        156      0.798      0.846      0.866      0.678
+Speed: 0.4ms preprocess, 3.4ms inference, 0.0ms loss, 1.6ms postprocess per image
+Results saved to [1mD:\\git \yolo_project\runs\detect\train[0m
+                   all        189        243      0.832      0.781      0.825       0.71
+              obstacle         28         28      0.841      0.565      0.647      0.541
+                  cola         59         59      0.856      0.932      0.962      0.909
+              football        133        156      0.798      0.846      0.866      0.678
+Speed: 1.1ms preprocess, 4.3ms inference, 0.0ms loss, 1.4ms postprocess per image
+Results saved to [1mD:\\git \yolo_project\runs\detect\val[0m
+recall   : 0.7811
+  obstacle  mAP50=0.6470  mAP50-95=0.5413
+  cola      mAP50=0.9619  mAP50-95=0.9090
+  football  mAP50=0.8660  mAP50-95=0.6783
+
+=== 训练结果目录 runs/detect/train（Level 3 要求 2）===
+
+args.yaml                               1.8 KB
+BoxF1_curve.png                       144.1 KB
+BoxP_curve.png                        126.1 KB
+BoxPR_curve.png                       109.9 KB
+BoxR_curve.png                        136.5 KB
+confusion_matrix.png                  113.7 KB
+confusion_matrix_normalized.png       122.4 KB
+labels.jpg                            108.4 KB
+results.csv                            12.4 KB
+results.png                           313.6 KB
+train_batch0.jpg                      409.5 KB
+train_batch1.jpg                      436.0 KB
+train_batch2.jpg                      425.6 KB
+train_batch8550.jpg                   370.4 KB
+train_batch8551.jpg                   329.0 KB
+train_batch8552.jpg                   295.4 KB
+val_batch0_labels.jpg                 444.3 KB
+val_batch0_pred.jpg                   438.0 KB
+val_batch1_labels.jpg                 422.7 KB
+val_batch1_pred.jpg                   435.1 KB
+val_batch2_labels.jpg                 436.1 KB
+val_batch2_pred.jpg                   444.7 KB
+weights/                           <dir>
+
+=== 各文件说明 ===
+  results.png                            训练曲线总览：三 loss + P + R + mAP50 + mAP50-95
+  results.csv                            每轮指标原始数据（100 行）
+  confusion_matrix.png                   混淆矩阵
+  BoxPR_curve.png / BoxP/R/F1_curve.png  精度-召回曲线，用于选置信度阈值
+  val_batch0~2_pred.jpg                  验证集预测效果
+  val_batch0~2_labels.jpg                验证集真值（与上一行对照看漏检/误检）
+  labels.jpg                             数据集标签分布总览
+  args.yaml                              本次训练的全部超参数
+  weights/best.pt                        最佳权重
+  weights/last.pt                        最后一轮权重
+
+【路径说明】终端日志在抓取过程中丢失了中文目录名（"研一""练习"），
+  因此上文出现的 "D:\git \yolo_project\..." 的真实路径为：
+    D:\研一\git 练习\yolo_project\data.yaml
+  该路径以 runs/detect/train/args.yaml 中的 data 字段为准。

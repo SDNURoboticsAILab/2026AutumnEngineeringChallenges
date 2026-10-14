@@ -1,0 +1,9 @@
+# Level 4 测试图片清单（这些图片已从训练/验证集中移出）
+# 原始位置 -> test_images/
+
+train image_rgb_20260727_143721                obstacle
+train image_rgb_20260728_101822                obstacle
+val   image_rgb_20260727_171348                cola
+train image_rgb_20260727_143003                cola
+train image_rgb_20260727_104140                football
+train image_rgb_20260727_120016                football

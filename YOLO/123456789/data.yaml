@@ -1,0 +1,38 @@
+# ============================================================================
+# YOLO 数据集配置文件 data.yaml
+#   对应考核要求：Level 3 第 1 节「配置数据集文件」
+#
+# 类别顺序必须与 classes.txt 完全一致（顺序即类别编号）：
+#     0 obstacle   障碍物
+#     1 cola       可乐瓶
+#     2 football   足球
+#
+# 目录结构（与本文件同级）：
+#     dataset/images/train   训练集图片
+#     dataset/images/val     验证集图片
+#     dataset/labels/train   与图片同名的 YOLO 标签
+#     dataset/labels/val
+#
+# 标签格式：每行 5 个值 = 类别编号 中心点x 中心点y 宽 高（全部归一化到 0~1）
+#
+# 划分方式：按类别分层随机划分，训练集:验证集 = 8:2，随机种子 42
+#           （脚本 split_dataset.py；当前 train 755 张 / val 188 张。
+#             另有 6 张已主动移出数据集，作为 Level 4 的“新图片”，
+#             移出记录见 test_images/_manifest.txt，移出前的备份见 dataset/_holdout_backup_*）
+#
+# 使用注意：path 写成相对路径时，Ultralytics 的解析顺序是
+#           ① 先看「当前工作目录」下有没有 ./dataset，有就直接用；
+#           ② 没有才回退到它自己的 datasets_dir 下找。
+#           所以请在 yolo_project 目录下运行 train.py / predict.py 等脚本
+#           （已验证：从项目目录运行解析为 yolo_project/dataset，换目录运行会报 dataset not found）。
+# ============================================================================
+
+path: ./dataset          # 数据集根目录（相对路径的解析规则见上方“使用注意”；也可写绝对路径）
+train: images/train      # 训练集图片目录（相对 path）
+val: images/val          # 验证集图片目录（相对 path）
+
+nc: 3                    # 类别数量，与 names 条数一致
+names:
+  0: obstacle
+  1: cola
+  2: football
