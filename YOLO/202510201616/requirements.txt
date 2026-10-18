@@ -1,0 +1,15 @@
+# Python 3.10（conda 环境 yolo_task）
+# 安装：pip install -r requirements.txt
+# 注意：torch 建议按显卡 CUDA 版本安装，例如
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+
+ultralytics==8.4.180
+torch==2.11.0
+torchvision==0.26.0
+labelImg==1.8.3
+PyQt5==5.15.11
+opencv-python==5.0.0.93
+numpy==2.2.6
+PyYAML==6.0.3
+pillow==12.3.0
+matplotlib==3.10.9

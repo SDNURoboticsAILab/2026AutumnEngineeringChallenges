@@ -1,0 +1,10 @@
+# YOLO 数据集配置（提交版）
+# 训练脚本会用 data.yaml 的绝对路径加载，所以下面的 train/val 相对于本文件所在目录解析。
+train: dataset/images/train
+val: dataset/images/val
+
+nc: 3
+names:
+  0: obstacle
+  1: cola
+  2: football

@@ -1,0 +1,23 @@
+模型: weights/best.pt（yolo11n，robot_dataset 50 epochs）
+输入: evidence/new_test/scene_input.jpg（1224x576）
+参数: imgsz=640, conf=0.25
+时间: 2026-10-18
+
+检测结果:
+  football   conf=0.78   box=[902.3, 159.1, 1114.6, 366.3]
+  obstacle   conf=0.45   box=[23.9, 147.3, 274.0, 391.5]
+  cola       未检测到
+
+共 2 个目标（3 个目标中检出 2 个）
+结果图: evidence/new_test/result_640.jpg
+
+补充测试:
+- conf 降到 0.05，仍然没有 cola；
+- imgsz=960/1280 时出现把足球误判成 cola 的误检，不能作为结果；
+- 紧裁到瓶子时，模型对瓶身下半段（深色液体）有 0.56 的 cola 响应，
+  但框只覆盖下半段，不是完整瓶子；整图里仍漏检。
+
+结论:
+模型对训练分布内的 obstacle / football 识别正常，但对这张图里“红标可口可乐塑料瓶”
+这个新外观泛化不足，cola 漏检。原因是训练集里的 cola 基本是深色瓶身，
+而测试图是透明瓶身+红色标签+灰色地毯背景，外观和上下文差异较大。
