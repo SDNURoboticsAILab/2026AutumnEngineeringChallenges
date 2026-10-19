@@ -1,0 +1,92 @@
+# ============================================================================
+# .gitignore
+# 项目：基于 YOLO 的机器人场景目标检测
+#       （SDNU 机器人实验室 2026 秋季工程挑战 · 项目一）
+# 位置：yolo_project/.gitignore（随项目一并提交；所有路径相对本文件所在目录）
+#
+# 设计原则：
+#   · 只排除【可再生成的缓存】与【开发期临时产物】
+#   · 绝不排除作业要求的成果物：dataset/、runs/detect/*/weights/best.pt、
+#     results/、report.md、训练与推理脚本、data.yaml
+#   · 逐条自检命令：git check-ignore -v <路径>
+#     有输出 = 被排除；无输出 = 会正常提交
+#
+# 注意：.gitignore 不支持行尾注释（写成 "*.npy  # 说明" 会让整行变成无效模式），
+#       因此本文件所有注释都单独占一行。
+# ============================================================================
+
+# ---------------------------------------------------------------- Python 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# ------------------------------------------- 工具缓存（删除后可自动重建）
+# matplotlib 字体与图形缓存目录（训练画图时生成）
+_mplcache/
+# Ultralytics 配置缓存
+_yolocfg/
+# Ultralytics 标签缓存（dataset/labels/*.cache），运行时会自动重建
+*.cache
+
+# ------------------------------------------------------ 图像数组副本（冗余文件）
+# 早期数据整理留下的图像数组副本（约 834 MB，代码未引用，已清理）
+*.npy
+
+# ---------------------------------------------------------------- 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ------------------------------------------------- 临时备份与开发期临时产物
+*.bak
+*.tmp
+# 标注前生成的人工预览图（约 18 MB）
+_preview/
+_err*.txt
+_out*.txt
+_labelimg_err.txt
+_auto_obstacle_samples.txt
+# pip 安装过程日志
+_*.log
+
+# --------------------------------------------------------- 开发期探针脚本
+# 环境/接口探测脚本，不属于交付代码
+_probe_*.py
+# 参数扫描脚本
+_sweep_*.py
+_preview_boxes.py
+
+# ---------------------------- 以 _ 开头的临时 txt（下方有"例外"，顺序不能颠倒）
+_*.txt
+
+# !!! 下面是例外规则，必须写在上面那条之后，否则会被一起排除 !!!
+# Level 4 关键证据：6 张新图片的移出记录
+!test_images/_manifest.txt
+
+# ============================================================================
+# 【必须提交、不得排除】的内容清单（无需额外规则，列在此处便于自检）
+#
+#   dataset/images/train/     755 张训练图片
+#   dataset/images/val/       188 张验证图片
+#   dataset/labels/train/     676 个标签文件 + classes.txt
+#   dataset/labels/val/       171 个标签文件 + classes.txt
+#   dataset/_holdout_backup_*/  Level 4 新图片移出前的备份（可回滚）
+#   test_images/              6 张新图片 + 真值标签 + _manifest.txt
+#   runs/detect/*/weights/best.pt   自己训练得到的模型（及格线要求）
+#   runs/detect/*/weights/last.pt   最后一轮权重（可选，约 5 MB/个）
+#   runs/detect/*/results.png、results.csv、args.yaml、
+#                BoxPR_curve.png、BoxP_curve.png、BoxR_curve.png、BoxF1_curve.png、
+#                confusion_matrix.png、confusion_matrix_normalized.png、
+#                labels.jpg、train_batch*.jpg、val_batch*.jpg
+#   results/                  全部验收证据、效果图、CSV 汇总表
+#   report.md                 项目报告
+#   *.py / *.bat              训练、推理、验收脚本与一键启动脚本
+#   data.yaml / data_subset.yaml / classes.txt
+#   yolo11n.pt                官方预训练权重（保留可离线复现训练）
+# ============================================================================

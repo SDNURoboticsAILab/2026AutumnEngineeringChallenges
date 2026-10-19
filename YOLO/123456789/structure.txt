@@ -1,0 +1,283 @@
+yolo_project/
+|-- .vscode/   [2 files]
+|   |-- settings.json                   437 B
+|   +-- tasks.json                     2.9 KB
+|-- dataset/   [1168 files]
+|   |-- images/   [949 files]
+|   |   |-- train/   [760 files]
+|   |   +-- val/   [189 files]
+|   +-- labels/   [219 files]
+|       |-- train/   [178 files]
+|       +-- val/   [41 files]
+|-- label_batches/   [9 files]
+|   |-- batch_01.txt                   3.3 KB
+|   |-- batch_01_detail.csv            2.9 KB
+|   |-- batch_02.txt                   3.4 KB
+|   |-- batch_03.txt                   3.4 KB
+|   |-- batch_04.txt                   3.4 KB
+|   |-- batch_05.txt                   3.4 KB
+|   |-- batch_06.txt                   3.4 KB
+|   |-- batch_07.txt                   3.3 KB
+|   +-- batch_08.txt                   3.0 KB
+|-- labels_backup/   [219 files]
+|   |-- train/   [163 files]
+|   |   |-- image_rgb_20260727_094542.txt     39 B
+|   |   |-- image_rgb_20260727_094921.txt     39 B
+|   |   |-- image_rgb_20260727_094949.txt     39 B
+|   |   |-- image_rgb_20260727_095007.txt     39 B
+|   |   |-- image_rgb_20260727_095135.txt     39 B
+|   |   |-- image_rgb_20260727_095144.txt     39 B
+|   |   |-- image_rgb_20260727_095346.txt     39 B
+|   |   |-- image_rgb_20260727_095404.txt     39 B
+|   |   |-- image_rgb_20260727_095530.txt     39 B
+|   |   |-- image_rgb_20260727_095626.txt     39 B
+|   |   |-- image_rgb_20260727_095652.txt     39 B
+|   |   |-- image_rgb_20260727_095706.txt     39 B
+|   |   |-- image_rgb_20260727_095714.txt     39 B
+|   |   |-- image_rgb_20260727_095742.txt     39 B
+|   |   |-- image_rgb_20260727_095750.txt     39 B
+|   |   |-- image_rgb_20260727_095807.txt     39 B
+|   |   |-- image_rgb_20260727_101015.txt     39 B
+|   |   |-- image_rgb_20260727_101108.txt     39 B
+|   |   |-- image_rgb_20260727_101129.txt     39 B
+|   |   |-- image_rgb_20260727_101404.txt     39 B
+|   |   |-- image_rgb_20260727_101733.txt     39 B
+|   |   |-- image_rgb_20260727_101746.txt     39 B
+|   |   |-- image_rgb_20260727_101919.txt     39 B
+|   |   |-- image_rgb_20260727_102233.txt     39 B
+|   |   |-- image_rgb_20260727_102239.txt     39 B
+|   |   |-- image_rgb_20260727_102416.txt     39 B
+|   |   |-- image_rgb_20260727_102439.txt     39 B
+|   |   |-- image_rgb_20260727_102446.txt     39 B
+|   |   |-- image_rgb_20260727_102754.txt     39 B
+|   |   |-- image_rgb_20260727_102815.txt     39 B
+|   |   |-- image_rgb_20260727_103844.txt     39 B
+|   |   |-- image_rgb_20260727_143017.txt     39 B
+|   |   |-- image_rgb_20260727_143353.txt     39 B
+|   |   |-- image_rgb_20260727_143413.txt     39 B
+|   |   |-- image_rgb_20260727_143434.txt     39 B
+|   |   |-- image_rgb_20260727_143511.txt     39 B
+|   |   |-- image_rgb_20260727_143555.txt     39 B
+|   |   |-- image_rgb_20260727_143837.txt     39 B
+|   |   |-- image_rgb_20260727_144047.txt     39 B
+|   |   |-- image_rgb_20260727_144442.txt     39 B
+|   |   |-- image_rgb_20260727_144539.txt     39 B
+|   |   |-- image_rgb_20260727_144554.txt     39 B
+|   |   |-- image_rgb_20260727_144612.txt     39 B
+|   |   |-- image_rgb_20260727_145114.txt     39 B
+|   |   |-- image_rgb_20260727_145208.txt     39 B
+|   |   |-- image_rgb_20260727_145220.txt     39 B
+|   |   |-- image_rgb_20260727_145239.txt     39 B
+|   |   |-- image_rgb_20260727_152214.txt     39 B
+|   |   |-- image_rgb_20260727_152222.txt     39 B
+|   |   |-- image_rgb_20260727_152232.txt     39 B
+|   |   |-- image_rgb_20260727_152405.txt     39 B
+|   |   |-- image_rgb_20260727_152436.txt     39 B
+|   |   |-- image_rgb_20260727_152700.txt     39 B
+|   |   |-- image_rgb_20260727_152711.txt     39 B
+|   |   |-- image_rgb_20260727_152724.txt     39 B
+|   |   |-- image_rgb_20260727_152836.txt     39 B
+|   |   |-- image_rgb_20260727_153016.txt     39 B
+|   |   |-- image_rgb_20260727_153026.txt     39 B
+|   |   |-- image_rgb_20260727_153040.txt     39 B
+|   |   |-- image_rgb_20260727_162454.txt     39 B
+|   |   |-- image_rgb_20260727_162634.txt     39 B
+|   |   |-- image_rgb_20260727_162650.txt     39 B
+|   |   |-- image_rgb_20260727_162939.txt     39 B
+|   |   |-- image_rgb_20260727_163014.txt     39 B
+|   |   |-- image_rgb_20260727_163048.txt     39 B
+|   |   |-- image_rgb_20260727_163116.txt     39 B
+|   |   |-- image_rgb_20260727_163138.txt     39 B
+|   |   |-- image_rgb_20260727_163207.txt     39 B
+|   |   |-- image_rgb_20260727_163239.txt     39 B
+|   |   |-- image_rgb_20260727_163249.txt     78 B
+|   |   |-- image_rgb_20260727_163344.txt     39 B
+|   |   |-- image_rgb_20260727_163426.txt     39 B
+|   |   |-- image_rgb_20260727_163521.txt     39 B
+|   |   |-- image_rgb_20260727_163533.txt     39 B
+|   |   |-- image_rgb_20260727_163544.txt     39 B
+|   |   |-- image_rgb_20260727_163712.txt     39 B
+|   |   |-- image_rgb_20260727_163809.txt     39 B
+|   |   |-- image_rgb_20260727_163946.txt     39 B
+|   |   |-- image_rgb_20260727_164006.txt     39 B
+|   |   |-- image_rgb_20260727_164044.txt     39 B
+|   |   |-- image_rgb_20260727_164056.txt     39 B
+|   |   |-- image_rgb_20260727_164112.txt     39 B
+|   |   |-- image_rgb_20260727_164122.txt     39 B
+|   |   |-- image_rgb_20260727_164208.txt     39 B
+|   |   |-- image_rgb_20260727_164216.txt     78 B
+|   |   |-- image_rgb_20260727_164225.txt     39 B
+|   |   |-- image_rgb_20260727_164234.txt     78 B
+|   |   |-- image_rgb_20260727_164255.txt     39 B
+|   |   |-- image_rgb_20260727_175222.txt     39 B
+|   |   |-- image_rgb_20260727_175652.txt     39 B
+|   |   |-- image_rgb_20260727_175903.txt     39 B
+|   |   |-- image_rgb_20260727_175914.txt     39 B
+|   |   |-- image_rgb_20260728_085806.txt     39 B
+|   |   |-- image_rgb_20260728_085834.txt     39 B
+|   |   |-- image_rgb_20260728_085845.txt     39 B
+|   |   |-- image_rgb_20260728_085854.txt     39 B
+|   |   |-- image_rgb_20260728_085902.txt     39 B
+|   |   |-- image_rgb_20260728_085916.txt     39 B
+|   |   |-- image_rgb_20260728_085930.txt     39 B
+|   |   |-- image_rgb_20260728_085951.txt     39 B
+|   |   |-- image_rgb_20260728_090001.txt     39 B
+|   |   |-- image_rgb_20260728_090026.txt     39 B
+|   |   |-- image_rgb_20260728_090035.txt     39 B
+|   |   |-- image_rgb_20260728_090101.txt     78 B
+|   |   |-- image_rgb_20260728_090109.txt     39 B
+|   |   |-- image_rgb_20260728_090148.txt     39 B
+|   |   |-- image_rgb_20260728_090157.txt     39 B
+|   |   |-- image_rgb_20260728_090207.txt     39 B
+|   |   |-- image_rgb_20260728_090315.txt     39 B
+|   |   |-- image_rgb_20260728_090322.txt     78 B
+|   |   |-- image_rgb_20260728_090331.txt     78 B
+|   |   |-- image_rgb_20260728_090444.txt     39 B
+|   |   |-- image_rgb_20260728_090524.txt     39 B
+|   |   |-- image_rgb_20260728_090534.txt     39 B
+|   |   |-- image_rgb_20260728_090554.txt     39 B
+|   |   |-- image_rgb_20260728_090605.txt     39 B
+|   |   |-- image_rgb_20260728_090628.txt     39 B
+|   |   |-- image_rgb_20260728_090636.txt     39 B
+|   |   |-- image_rgb_20260728_090649.txt     39 B
+|   |   |-- image_rgb_20260728_093155.txt     39 B
+|   |   |-- image_rgb_20260728_093213.txt     39 B
+|   |   |-- image_rgb_20260728_093242.txt     39 B
+|   |   |-- image_rgb_20260728_093312.txt     39 B
+|   |   |-- image_rgb_20260728_093320.txt     39 B
+|   |   |-- image_rgb_20260728_093339.txt     39 B
+|   |   |-- image_rgb_20260728_093355.txt     39 B
+|   |   |-- image_rgb_20260728_093405.txt     39 B
+|   |   |-- image_rgb_20260728_093415.txt     39 B
+|   |   |-- image_rgb_20260728_093425.txt     39 B
+|   |   |-- image_rgb_20260728_093448.txt     39 B
+|   |   |-- image_rgb_20260728_093507.txt     39 B
+|   |   |-- image_rgb_20260728_093539.txt     39 B
+|   |   |-- image_rgb_20260728_093636.txt     39 B
+|   |   |-- image_rgb_20260728_093745.txt     39 B
+|   |   |-- image_rgb_20260728_094220.txt     39 B
+|   |   |-- image_rgb_20260728_094232.txt     39 B
+|   |   |-- image_rgb_20260728_094305.txt     39 B
+|   |   |-- image_rgb_20260728_094317.txt     39 B
+|   |   |-- image_rgb_20260728_094325.txt     39 B
+|   |   |-- image_rgb_20260728_094336.txt     39 B
+|   |   |-- image_rgb_20260728_094418.txt     39 B
+|   |   |-- image_rgb_20260728_094427.txt     39 B
+|   |   |-- image_rgb_20260728_094644.txt     39 B
+|   |   |-- image_rgb_20260728_094855.txt     39 B
+|   |   |-- image_rgb_20260728_094943.txt     39 B
+|   |   |-- image_rgb_20260728_095013.txt     39 B
+|   |   |-- image_rgb_20260728_095249.txt     39 B
+|   |   |-- image_rgb_20260728_095352.txt     39 B
+|   |   |-- image_rgb_20260728_095404.txt     39 B
+|   |   |-- image_rgb_20260728_095414.txt     39 B
+|   |   |-- image_rgb_20260728_095506.txt     39 B
+|   |   |-- image_rgb_20260728_100950.txt     39 B
+|   |   |-- image_rgb_20260728_101345.txt     39 B
+|   |   |-- image_rgb_20260728_101751.txt     39 B
+|   |   |-- image_rgb_20260728_101800.txt    117 B
+|   |   |-- image_rgb_20260728_101909.txt     39 B
+|   |   |-- image_rgb_20260728_101942.txt     39 B
+|   |   |-- image_rgb_20260728_102826.txt     39 B
+|   |   |-- image_rgb_20260728_103137.txt     39 B
+|   |   |-- image_rgb_20260728_103219.txt     39 B
+|   |   |-- image_rgb_20260728_103501.txt     39 B
+|   |   |-- image_rgb_20260728_104036.txt     39 B
+|   |   +-- image_rgb_20260728_104239.txt     39 B
+|   +-- val/   [56 files]
+|       |-- image_rgb_20260727_094957.txt     39 B
+|       |-- image_rgb_20260727_095759.txt     39 B
+|       |-- image_rgb_20260727_095814.txt     39 B
+|       |-- image_rgb_20260727_101022.txt     39 B
+|       |-- image_rgb_20260727_101120.txt     39 B
+|       |-- image_rgb_20260727_101136.txt     78 B
+|       |-- image_rgb_20260727_101302.txt     39 B
+|       |-- image_rgb_20260727_101435.txt     39 B
+|       |-- image_rgb_20260727_102058.txt     78 B
+|       |-- image_rgb_20260727_104048.txt     39 B
+|       |-- image_rgb_20260727_143650.txt     39 B
+|       |-- image_rgb_20260727_145135.txt     39 B
+|       |-- image_rgb_20260727_145152.txt     39 B
+|       |-- image_rgb_20260727_152733.txt     39 B
+|       |-- image_rgb_20260727_162549.txt     39 B
+|       |-- image_rgb_20260727_162612.txt     39 B
+|       |-- image_rgb_20260727_162754.txt     39 B
+|       |-- image_rgb_20260727_162931.txt     39 B
+|       |-- image_rgb_20260727_163022.txt     39 B
+|       |-- image_rgb_20260727_163031.txt     39 B
+|       |-- image_rgb_20260727_163040.txt     39 B
+|       |-- image_rgb_20260727_163057.txt     78 B
+|       |-- image_rgb_20260727_163123.txt     39 B
+|       |-- image_rgb_20260727_163130.txt     39 B
+|       |-- image_rgb_20260727_163324.txt     39 B
+|       |-- image_rgb_20260727_163601.txt     39 B
+|       |-- image_rgb_20260727_163633.txt     39 B
+|       |-- image_rgb_20260727_163700.txt     39 B
+|       |-- image_rgb_20260727_164130.txt     78 B
+|       |-- image_rgb_20260727_164139.txt     39 B
+|       |-- image_rgb_20260727_164148.txt     39 B
+|       |-- image_rgb_20260727_171024.txt     39 B
+|       |-- image_rgb_20260727_175234.txt     39 B
+|       |-- image_rgb_20260727_180204.txt     39 B
+|       |-- image_rgb_20260727_180228.txt     39 B
+|       |-- image_rgb_20260727_180312.txt     39 B
+|       |-- image_rgb_20260727_180329.txt     39 B
+|       |-- image_rgb_20260728_085825.txt     39 B
+|       |-- image_rgb_20260728_085939.txt     39 B
+|       |-- image_rgb_20260728_090257.txt     39 B
+|       |-- image_rgb_20260728_090344.txt     39 B
+|       |-- image_rgb_20260728_090458.txt     39 B
+|       |-- image_rgb_20260728_090515.txt     39 B
+|       |-- image_rgb_20260728_093232.txt     39 B
+|       |-- image_rgb_20260728_094506.txt     39 B
+|       |-- image_rgb_20260728_094517.txt     39 B
+|       |-- image_rgb_20260728_094812.txt     39 B
+|       |-- image_rgb_20260728_094953.txt     39 B
+|       |-- image_rgb_20260728_095006.txt     39 B
+|       |-- image_rgb_20260728_101519.txt     39 B
+|       |-- image_rgb_20260728_101534.txt    117 B
+|       |-- image_rgb_20260728_101812.txt     39 B
+|       |-- image_rgb_20260728_102842.txt     39 B
+|       |-- image_rgb_20260728_103150.txt     39 B
+|       |-- image_rgb_20260728_103703.txt     39 B
+|       +-- image_rgb_20260728_104306.txt     39 B
+|-- results/   [1 files]
+|   +-- .gitkeep                          5 B
+|-- runs/   [1 files]
+|   +-- .gitkeep                          5 B
+|-- test_images/   [0 files]
+|-- 1_structure.bat                 308 B
+|-- 2_label_tool.bat                495 B
+|-- 3_progress.bat                  295 B
+|-- 4_check.bat                     314 B
+|-- 5_train.bat                     232 B
+|-- 6_predict.bat                   272 B
+|-- README.md                      4.0 KB
+|-- audit_labels.py                6.1 KB
+|-- auto_label.py                  4.0 KB
+|-- batch_progress.py              2.1 KB
+|-- check_labels.py                3.7 KB
+|-- check_rawdata.py               3.3 KB
+|-- check_transfer.py              4.5 KB
+|-- classes.txt                      23 B
+|-- data.yaml                       164 B
+|-- data_subset.yaml                208 B
+|-- env_check.py                   1.2 KB
+|-- label_plan.csv                22.4 KB
+|-- label_tool.py                 13.7 KB
+|-- label_worklist.csv            50.4 KB
+|-- labeled_train.txt             13.7 KB
+|-- labeled_val.txt                4.6 KB
+|-- make_label_plan.py             3.7 KB
+|-- predict.py                     1.7 KB
+|-- report.md                     10.8 KB
+|-- requirements.txt                788 B
+|-- setup_env.ps1                  2.2 KB
+|-- show_structure.py              1.7 KB
+|-- split_dataset.py               2.3 KB
+|-- structure.txt                 13.6 KB
+|-- todo_no_label.txt             26.1 KB
+|-- todo_obstacle.txt             11.3 KB
+|-- train.py                       5.1 KB
+|-- verify_structure.py            3.8 KB
++-- yolo11n.pt                     5.4 MB

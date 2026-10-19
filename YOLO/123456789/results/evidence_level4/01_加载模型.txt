@@ -1,0 +1,80 @@
+=== Level 4 第 1 步：加载训练模型 ===
+
+题目要求：加载自己训练得到的模型权重。
+说明：本文件把“模型确实是自己训练出来的”这一点的证据逐条打印并判定。
+
+[1] 权重文件信息
+  路径      : D:\研一\git 练习\yolo_project\runs\detect\train\weights\best.pt
+  大小      : 5493457 字节（5.24 MB）
+  修改时间  : 2026-09-23 20:34:08
+  SHA256    : d74282b0035630395efabe3df59392aa63c6e34ac2e0d08a9aba6bc37e698d0a
+  （SHA256 可用于确认提交的权重文件没有被替换或损坏）
+
+[2] 加载结果（YOLO("best.pt")）
+  任务 task       : detect
+  类别数 nc       : 3
+  类别名 names    : {0: 'obstacle', 1: 'cola', 2: 'football'}
+  参数量          : 2590425
+
+[3] checkpoint 内部元数据（权重文件自己记录的训练履历）
+  训练时使用的配置：
+    data      : D:\研一\git 练习\yolo_project\data.yaml
+    model     : yolo11n.pt
+    epochs    : 100
+    imgsz     : 640
+    batch     : 8
+    optimizer : auto
+    seed      : 42
+    device    : 0
+    lr0       : 0.01
+    patience  : 25
+    project   : D:\研一\git 练习\yolo_project\runs\detect
+    name      : train
+    pretrained: True
+  保存时间 date    : 2026-09-23T20:29:18.643751+08:00
+  ultralytics 版本 : 8.4.155
+  保存那一刻的指标（train_metrics）：
+    metrics/precision(B)    : 0.83070
+    metrics/recall(B)       : 0.78120
+    metrics/mAP50(B)        : 0.82500
+    metrics/mAP50-95(B)     : 0.70953
+    fitness                 : 0.70953
+
+  关于几个“看起来像空值”的字段（都是训练正常结束的标志，不是错误）：
+    epoch = -1          → 训练已结束（保存时被置为 -1）
+    optimizer = None      → 优化器状态已被剥离，权重只剩推理所需内容
+    ema = None            → EMA 权重已合并进 model 字段
+    best_fitness = None   → 训练结束后不再需要
+  这也是权重文件只有 5.24 MB 的原因（未剥离时约 11 MB）。
+
+[4] 与 results.csv 交叉验证（权重指标必须能在训练日志里找到对应轮次）
+  checkpoint 记录的四个指标：
+    P=0.83070  R=0.78120  mAP50=0.82500  mAP50-95=0.70953
+  在 results.csv 中找到四个指标同时一致的一轮（最大误差 0.0e+00）：
+    epoch=82  P=0.8307  R=0.7812  mAP50=0.825  mAP50-95=0.70953
+  → 说明 best.pt 就是第 82 轮保存下来的权重，可追溯到具体训练记录。
+  注：Ultralytics 用 fitness 选择 best.pt，本版本 fitness 权重为 [0,0,0,1]，
+      即 fitness 完全等于 mAP50-95 —— 所以 best.pt 是“mAP50-95 最高的那一轮”，
+      不一定等于“mAP50 最高的那一轮”。
+
+[5] 与官方 COCO 预训练权重对比
+  官方 yolo11n.pt : 80 类，例如 person, bicycle, car, motorcycle, airplane, bus, train, truck ...
+  本项目 best.pt : 3 类，['obstacle', 'cola', 'football']
+  → 官方权重是 80 类通用模型；本模型只有 3 类且正好是本项目的目标类别。
+
+[6] 结论
+  [PASS] 加载成功且任务为 detect（task=detect）
+  [PASS] 类别数为 3（nc=3）
+  [PASS] 类别名与项目一致（obstacle/cola/football）
+  [PASS] checkpoint 记录了本项目的数据集配置（D:\研一\git 练习\yolo_project\data.yaml）
+  [PASS] checkpoint 记录了基础模型 yolo11n.pt（yolo11n.pt）
+  [PASS] checkpoint 记录了 100 轮 / imgsz 640 / batch 8（epochs=100 imgsz=640 batch=8）
+  [PASS] checkpoint 指标与 results.csv 完全对应（epoch=82，最大误差 0.0e+00）
+  [PASS] 与官方 COCO 权重类别数不同（80 vs 3）（pretrain=80, ours=3）
+
+  总结：模型加载正确，确认是使用本项目数据集（data.yaml）自行训练的权重，可用于 Level 4 第 2 步的新图片推理。
+
+后续用法（Level 4 第 2 步）：
+  results = model.predict(source="test_images", imgsz=640, conf=0.25,
+                          save=True, project="results", name="predict")
+  或直接运行：python predict.py

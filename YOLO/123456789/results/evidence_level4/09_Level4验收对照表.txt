@@ -1,0 +1,104 @@
+=== Level 4「验证标准与提交内容」自动验收 ===
+
+考核项目：基于 YOLO 的机器人场景目标检测（SDNU 机器人实验室 2026 秋季工程挑战 · 项目一）
+及格线要求：至少完成 Level 4（使用自己训练得到的模型，对新的图片完成目标检测）
+
+本表由 check_level4.py 自动生成，逐条核对考核给出的 5 条验证标准。
+
+──────────────────────────────────────────────────────────────────────────
+【通过】1. 正确加载自己训练得到的模型
+
+  权重文件     : D:\研一\git 练习\yolo_project\runs\detect\train_holdout\weights\best.pt
+  任务 / 类别数: detect / 3
+  类别名称     : ['obstacle', 'cola', 'football']
+  [PASS] 任务为 detect，类别恰为 obstacle/cola/football
+  checkpoint 记录的 data: D:\研一\git 练习\yolo_project\data.yaml
+  [PASS] 权重自身记录了本项目的数据集配置，可证明是自己训练的
+
+  证据文件：
+    · D:\研一\git 练习\yolo_project\runs\detect\train_holdout\weights\best.pt
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\01_加载模型.txt
+  截图 12：加载自己训练的模型（01_加载模型.txt 的 [6] 结论段）
+
+──────────────────────────────────────────────────────────────────────────
+【通过】2. 对若干张训练集之外的新图片完成推理
+
+  新图片数量   : 6 张（D:\研一\git 练习\yolo_project\test_images）
+  [PASS] 6 张都不在 dataset/images/train 与 val 中（确实是训练集之外）
+  移出记录     : _manifest.txt（存在）
+  推理结果标签 : 6 / 6 张
+  [PASS] 每张新图片都有对应的推理结果
+  评测结果     : 6 张新图片 17 TP / 2 FP / 4 FN → 精确率 0.895、召回率 0.810
+                 （obstacle 与 cola 均为 1.000/1.000；漏检与误报集中在极小目标）
+
+  证据文件：
+    · D:\研一\git 练习\yolo_project\test_images\_manifest.txt
+    · D:\研一\git 练习\yolo_project\results\saved_results\new_images\labels
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\02_对新图片推理.txt
+  截图 13~15 与 18：单目标 / 多目标 / 不同场景效果图、整体拼接效果图
+
+──────────────────────────────────────────────────────────────────────────
+【通过】3. 保存目标检测结果
+
+  ① 画框结果图       : D:\研一\git 练习\yolo_project\results\saved_results\new_images（6 个文件）
+  ② YOLO 格式标签   : D:\研一\git 练习\yolo_project\results\saved_results\new_images\labels（6 个文件）
+  ③ 目标裁剪图       : D:\研一\git 练习\yolo_project\results\saved_results\new_images\crops（19 个文件）
+  ④ 结构化汇总表 : D:\研一\git 练习\yolo_project\results\evidence_level4\05_检测结果汇总表.csv（22 行目标记录）
+  数量一致性   : 结果图 6 张 / 标签 6 个 / 检出 19 个目标 / 裁剪图 19 张
+  [PASS] 四种形式互相一致（画框图数=标签文件数=输入图片数，裁剪图数=检出目标数）
+
+  证据文件：
+    · D:\研一\git 练习\yolo_project\results\saved_results\new_images
+    · D:\研一\git 练习\yolo_project\results\saved_results\new_images\labels
+    · D:\研一\git 练习\yolo_project\results\saved_results\new_images\crops
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\05_检测结果汇总表.csv
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\04_保存检测结果.txt
+  截图 16：保存结果与一致性校验（04_保存检测结果.txt 的 [四] 段）
+
+──────────────────────────────────────────────────────────────────────────
+【通过】4. 提交至少一组清晰的最终检测效果图
+
+  整体拼接效果图       : 03_检测效果图_拼接.jpg              1338×1188 JPEG 401 KB
+  ① 单目标检测       : 06_情况①单目标检测.jpg              1338×404 JPEG 129 KB
+  ② 多目标同时检测     : 07_情况②多目标检测.jpg              1338×796 JPEG 273 KB
+  ③ 不同场景与角度     : 08_情况③不同场景与角度.jpg            1338×404 JPEG 137 KB
+  [PASS] 4 张效果图均存在且可正常打开，覆盖题目建议的三种展示情况
+
+  证据文件：
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\03_检测效果图_拼接.jpg
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\06_情况①单目标检测.jpg
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\07_情况②多目标检测.jpg
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\08_情况③不同场景与角度.jpg
+  截图 18：整体拼接效果图（03_检测效果图_拼接.jpg）
+
+──────────────────────────────────────────────────────────────────────────
+【通过】5. 检测结果中能够正常显示目标框、类别名称和置信度
+
+  (a) 置信度以数值形式保存：标签文件每行 6 列（类别 cx cy w h 置信度）→ 是
+  (b) 类别名称以目录形式保存：crops/ 下 ['cola', 'football', 'obstacle']
+  (c) 目标框画在图上：6/6 张结果图与原图存在像素差异
+  (d) 推理时显式启用了 show_boxes / show_labels / show_conf（见 save_detection_results.py）
+  [PASS] 目标框、类别名称、置信度三者均可正常显示
+
+  证据文件：
+    · D:\研一\git 练习\yolo_project\results\saved_results\new_images\labels
+    · D:\研一\git 练习\yolo_project\results\saved_results\new_images\crops
+    · D:\研一\git 练习\yolo_project\results\evidence_level4\04_保存检测结果.txt
+  截图 17：终端输出的类别与置信度（02_对新图片推理.txt 的 [二] 段）
+
+==========================================================================
+验收汇总
+==========================================================================
+验证标准                                           结果
+1. 正确加载自己训练得到的模型                               通过
+2. 对若干张训练集之外的新图片完成推理                           通过
+3. 保存目标检测结果                                    通过
+4. 提交至少一组清晰的最终检测效果图                            通过
+5. 检测结果中能够正常显示目标框、类别名称和置信度                     通过
+
+总计：5 / 5 条通过
+
+结论：Level 4 的全部验证标准均已满足，项目达到及格线要求，可以提交。
+      说明：以上结果全部来自自己训练的权重
+            （runs/detect/train_holdout/weights/best.pt），
+            推理图片为已移出数据集的 6 张图片，从未参与该权重的训练与验证。

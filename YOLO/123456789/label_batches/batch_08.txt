@@ -1,0 +1,5 @@
+D:\研一\git 练习\yolo_project\dataset\images\val\image_rgb_20260728_103818.jpg
+D:\研一\git 练习\yolo_project\dataset\images\val\image_rgb_20260728_103828.jpg
+D:\研一\git 练习\yolo_project\dataset\images\val\image_rgb_20260728_103848.jpg
+D:\研一\git 练习\yolo_project\dataset\images\val\image_rgb_20260728_104043.jpg
+D:\研一\git 练习\yolo_project\dataset\images\val\image_rgb_20260728_104319.jpg
