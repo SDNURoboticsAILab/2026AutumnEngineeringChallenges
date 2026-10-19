@@ -1,0 +1,104 @@
+==============================================================================
+GitHub 提交目录树核对 —— 202410205119/
+==============================================================================
+
+202410205119/   [4972 文件, 逻辑大小 294.2 MB]
+├── cola/   [586 文件]
+├── data/   [949 文件]
+├── dataset/   [1710 文件]
+├── football/   [680 文件]
+├── logs/   [4 文件]
+│   ├── bootstrap_console.log  (20.0 KB)
+│   ├── env_check_console.log  (3.9 KB)
+│   ├── predict_console.log  (2.9 KB)
+│   └── train_console.log  (7.8 KB)
+├── obstacle/   [632 文件]
+├── results/   [146 文件]
+├── runs/   [41 文件]
+│   ├── bootstrap/   [17 文件]
+│   │   ├── weights/   [2 文件]
+│   │   ├── BoxF1_curve.png  (143.9 KB)
+│   │   ├── BoxPR_curve.png  (75.9 KB)
+│   │   ├── BoxP_curve.png  (123.9 KB)
+│   │   ├── BoxR_curve.png  (116.8 KB)
+│   │   ├── args.yaml  (1.9 KB)
+│   │   ├── confusion_matrix.png  (98.5 KB)
+│   │   ├── confusion_matrix_normalized.png  (110.8 KB)
+│   │   ├── labels.jpg  (105.4 KB)
+│   │   ├── results.csv  (7.9 KB)
+│   │   ├── results.png  (305.1 KB)
+│   │   ├── train_batch0.jpg  (412.7 KB)
+│   │   ├── train_batch1.jpg  (441.0 KB)
+│   │   ├── train_batch2.jpg  (431.5 KB)
+│   │   ├── val_batch0_labels.jpg  (343.9 KB)
+│   │   └── val_batch0_pred.jpg  (347.3 KB)
+│   └── train/   [24 文件]
+│       ├── weights/   [2 文件]
+│       ├── BoxF1_curve.png  (163.6 KB)
+│       ├── BoxPR_curve.png  (116.0 KB)
+│       ├── BoxP_curve.png  (136.5 KB)
+│       ├── BoxR_curve.png  (151.5 KB)
+│       ├── args.yaml  (1.8 KB)
+│       ├── confusion_matrix.png  (116.3 KB)
+│       ├── confusion_matrix_normalized.png  (124.5 KB)
+│       ├── labels.jpg  (152.5 KB)
+│       ├── results.csv  (1.2 KB)
+│       ├── results.png  (232.4 KB)
+│       ├── train_batch0.jpg  (547.6 KB)
+│       ├── train_batch1.jpg  (550.2 KB)
+│       ├── train_batch1050.jpg  (438.3 KB)
+│       ├── train_batch1051.jpg  (431.8 KB)
+│       ├── train_batch1052.jpg  (408.6 KB)
+│       ├── train_batch2.jpg  (549.7 KB)
+│       ├── val_batch0_labels.jpg  (447.5 KB)
+│       ├── val_batch0_pred.jpg  (462.3 KB)
+│       ├── val_batch1_labels.jpg  (481.3 KB)
+│       ├── val_batch1_pred.jpg  (491.1 KB)
+│       ├── val_batch2_labels.jpg  (480.8 KB)
+│       └── val_batch2_pred.jpg  (494.2 KB)
+├── scripts/   [30 文件]
+│   ├── check_stale_refs.py  (1.2 KB)
+│   ├── cleanup_original_shots.py  (1.6 KB)
+│   ├── env_check.py  (6.2 KB)
+│   ├── fill_report.py  (17.5 KB)
+│   ├── finalize_deliverable.py  (1.8 KB)
+│   ├── finalize_naming.py  (3.3 KB)
+│   ├── fix_report_refs.py  (2.2 KB)
+│   ├── make_console_screenshot.py  (6.9 KB)
+│   ├── make_data_yaml.py  (2.7 KB)
+│   ├── make_dataset_stats.py  (4.4 KB)
+│   ├── make_extra_shots.py  (11.5 KB)
+│   ├── make_final_manifest.py  (16.2 KB)
+│   ├── make_label_preview.py  (5.8 KB)
+│   ├── make_labelimg_mock.py  (8.6 KB)
+│   ├── make_project_tree.py  (4.0 KB)
+│   ├── make_training_curves.py  (7.5 KB)
+│   ├── place_user_screenshots.py  (3.2 KB)
+│   ├── promote_real_shots.py  (1.9 KB)
+│   ├── sandbox_shim.py  (4.8 KB)
+│   ├── stage_deliverables.py  (11.4 KB)
+│   ├── step1a_labelme_json2voc.py  (6.5 KB)
+│   ├── step1b_prepare_dataset.py  (12.4 KB)
+│   ├── step2a_bootstrap_train.py  (5.7 KB)
+│   ├── step2b_autoannotate.py  (6.5 KB)
+│   ├── step3_train.py  (8.2 KB)
+│   ├── step4_predict_evaluate.py  (12.8 KB)
+│   ├── sync_annotations.py  (2.5 KB)
+│   ├── verify_docs.py  (1.6 KB)
+│   ├── verify_submission.py  (10.6 KB)
+│   └── wait_and_postprocess.py  (8.5 KB)
+├── test/   [188 文件]
+├── README.md  (10.4 KB)
+├── data.yaml  (895 B)
+├── predict.py  (872 B)
+├── report.md  (34.3 KB)
+├── requirements.txt  (754 B)
+└── train.py  (819 B)
+
+==============================================================================
+说明:
+  - dataset/ test/ obstacle/ cola/ football/ 等含大量图片的目录只显示统计，
+    避免目录树过长；各目录文件数即为实际提交文件数。
+  - 图片(.jpg)与标注(.xml)采用硬链接组织，本地不额外占用磁盘；
+    拷贝到其他磁盘或上传 Git 时会变为独立文件。
+==============================================================================

@@ -1,0 +1,40 @@
+{
+  "epochs_completed": 60,
+  "best_weights": "C:\\Users\\zhonglilsq\\Desktop\\YOLO\\runs\\train\\weights\\best.pt",
+  "last_weights": "C:\\Users\\zhonglilsq\\Desktop\\YOLO\\runs\\train\\weights\\last.pt",
+  "columns": [
+    "epoch",
+    "time",
+    "train/box_loss",
+    "train/cls_loss",
+    "train/dfl_loss",
+    "metrics/precision(B)",
+    "metrics/recall(B)",
+    "metrics/mAP50(B)",
+    "metrics/mAP50-95(B)",
+    "val/box_loss",
+    "val/cls_loss",
+    "val/dfl_loss",
+    "lr/pg0",
+    "lr/pg1",
+    "lr/pg2"
+  ],
+  "final_epoch_metrics": {
+    "epoch": "60",
+    "time": "8361.57",
+    "train/box_loss": "0.74371",
+    "train/cls_loss": "0.60099",
+    "train/dfl_loss": "0.97441",
+    "metrics/precision(B)": "0.89689",
+    "metrics/recall(B)": "0.79828",
+    "metrics/mAP50(B)": "0.89294",
+    "metrics/mAP50-95(B)": "0.70351",
+    "val/box_loss": "0.84462",
+    "val/cls_loss": "0.72515",
+    "val/dfl_loss": "0.98564",
+    "lr/pg0": "1.06784e-05",
+    "lr/pg1": "1.06784e-05",
+    "lr/pg2": "1.06784e-05"
+  },
+  "note": "epochs_completed 已按 epoch 去重（断点续训会在 results.csv 中产生重复行）"
+}

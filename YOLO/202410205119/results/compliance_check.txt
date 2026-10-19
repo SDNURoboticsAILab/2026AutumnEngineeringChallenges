@@ -1,0 +1,99 @@
+================================================================================
+提交合规性自检报告
+检查对象: 202410205119
+规范依据: README「一、考核目的与总提交要求」「三、提交规范」
+================================================================================
+
+【代码与配置】
+--------------------------------------------------------------------------------
+  ✓ README.md                                  202410205119\README.md
+  ✓ report.md                                  202410205119\report.md
+  ✓ data.yaml                                  202410205119\data.yaml
+  ✓ requirements.txt                           202410205119\requirements.txt
+  ✓ train.py                                   202410205119\train.py
+  ✓ predict.py                                 202410205119\predict.py
+  ✓ data.yaml 含 train/val/test                 train/val/test 三划分
+  ✓ data.yaml 含 3 个类别名                         obstacle/cola/football
+  ✓ data.yaml nc=3                             nc: 3
+
+【数据集】
+--------------------------------------------------------------------------------
+  ✓ dataset/images/train                       665 张
+  ✓ dataset/labels/train                       665 个
+  ✓ dataset train 图片/标签数量一致                    images=665 labels=665
+  ✓ dataset/images/val                         190 张
+  ✓ dataset/labels/val                         190 个
+  ✓ dataset val 图片/标签数量一致                      images=190 labels=190
+  ✓ test/images                                94 张
+  ✓ test/labels                                94 个
+  ✓ test 图片/标签数量一致                             images=94 labels=94
+  ✓ 划分比例 7:2:1                                 train=70.1% val=20.0% test=9.9% (共 949)
+
+【标注】
+--------------------------------------------------------------------------------
+  ✓ VOC XML 标注汇总                               949 个
+  ✓ obstacle 原图与 xml 同名匹配                      jpg=316 xml=316
+  ✓ cola 原图与 xml 同名匹配                          jpg=293 xml=293
+  ✓ football 原图与 xml 同名匹配                      jpg=340 xml=340
+
+【训练产物】
+--------------------------------------------------------------------------------
+  ✓ 模型权重 best.pt                               20.2 MB
+  ✓ 训练逐轮指标 results.csv                         runs/train/
+  ✓ 训练总览图 results.png                          runs/train/
+
+【results 产物】
+--------------------------------------------------------------------------------
+  ✓ 数据集统计表                                     dataset_statistics.txt
+  ✓ 数据集统计表(CSV)                                dataset_statistics.csv
+  ✓ 训练损失曲线                                     train_loss_curves.png
+  ✓ 验证损失曲线                                     train_val_loss_curves.png
+  ✓ mAP 曲线                                     train_map_curves.png
+  ✓ Precision/Recall 曲线                        train_pr_curves.png
+  ✓ 测试集评估指标(txt)                               evaluation_metrics.txt
+  ✓ 测试集评估指标(csv)                               evaluation_metrics.csv
+  ✓ 测试集评估指标(json)                              evaluation_metrics.json
+  ✓ 逐轮训练指标(json)                               train_metrics_per_epoch.json
+  ✓ 权重信息(json)                                 model_weights_info.json
+  ✓ 数据集深度统计                                    dataset_deep_stats.txt
+  ✓ 项目目录树                                      project_tree.txt
+  ✓ run 截图清单                                   run_screenshots_manifest.txt
+  ✓ result 产物清单                                result_files_manifest.txt
+  ✓ 交付摘要                                       final_summary.txt
+  ✓ 推理可视化图片                                    40 张
+  ✓ 推理检出明细 json                                predictions_detail.json
+
+【过程截图】
+--------------------------------------------------------------------------------
+  ✓ 截图数量 >= 4                                  9 张
+
+【规范逐条截图】
+--------------------------------------------------------------------------------
+  ✓ L1① Python/PyTorch/YOLO 安装截图               01_环境检查与增量安装.png
+  ✓ L1③ 项目目录结构截图                               05_项目目录结构.png
+  ✓ L2① 标注工具运行截图                               04_LabelImg标注界面_1_obstacle.png
+  ✓ L2② 已完成标注的图片截图                             04_LabelImg标注界面_2_cola.png
+  ✓ L2③ YOLO 标签文件内容截图                          07_YOLO标签文件内容.png
+  ✓ L3① 模型开始训练的终端截图                            02_训练终端.png
+  ✓ L3④ 推理/评估终端截图                              03_推理终端.png
+  ✓ 数据集划分统计截图                                  06_数据集划分统计.png
+
+【报告内容】
+--------------------------------------------------------------------------------
+  ✓ L1③ 报告说明训练/验证集划分方式                         关键字 '7 : 2 : 1'
+  ✓ L2④ 报告说明三个类别编号及含义                          关键字 'obstacle'
+  ✓ Level 3 训练指标说明                             关键字 'mAP'
+  ✓ Level 3 损失说明                               关键字 'loss'
+  ✓ Level 4 推理效果说明                             关键字 '推理'
+
+【评估指标】
+--------------------------------------------------------------------------------
+  ✓ mAP@0.5 在 (0,1]                            0.925
+  ✓ Precision 在 (0,1]                          0.8755
+  ✓ Recall 在 (0,1]                             0.8548
+  ✓ 含逐类别指标                                     3 个类别
+
+================================================================================
+通过: 62 项    缺失/异常: 0 项
+结论: ✅ 全部检查项通过，交付物满足作业提交要求。
+================================================================================

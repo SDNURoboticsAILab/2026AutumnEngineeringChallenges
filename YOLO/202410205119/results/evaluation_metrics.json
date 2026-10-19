@@ -1,0 +1,42 @@
+{
+  "weights": "runs\\train\\weights\\best.pt",
+  "split": "test",
+  "test_images": 94,
+  "conf_threshold_for_predict": 0.25,
+  "iou_threshold_for_eval": 0.6,
+  "imgsz": 640,
+  "mAP50": 0.925,
+  "mAP50_95": 0.7448,
+  "precision": 0.8755,
+  "recall": 0.8548,
+  "predicted_boxes_at_conf": 330,
+  "predicted_class_counts": {
+    "football": 72,
+    "obstacle": 224,
+    "cola": 34
+  },
+  "mean_confidence": 0.7089,
+  "per_class": [
+    {
+      "class": "obstacle",
+      "precision": 0.8524,
+      "recall": 0.7402,
+      "mAP50": 0.8778,
+      "mAP50_95": 0.6671
+    },
+    {
+      "class": "cola",
+      "precision": 0.8948,
+      "recall": 0.8571,
+      "mAP50": 0.9174,
+      "mAP50_95": 0.7493
+    },
+    {
+      "class": "football",
+      "precision": 0.8793,
+      "recall": 0.9672,
+      "mAP50": 0.9799,
+      "mAP50_95": 0.8181
+    }
+  ]
+}
