@@ -1,0 +1,562 @@
+{
+  "strategy": "All labeled 2026-07-28 images in validation; earlier dates in training. Same laboratory background may still limit generalization.",
+  "summary": {
+    "train": {
+      "images": 51,
+      "objects": {
+        "2": 54,
+        "0": 25,
+        "1": 22
+      }
+    },
+    "val": {
+      "images": 12,
+      "objects": {
+        "1": 7,
+        "2": 6,
+        "0": 10
+      }
+    }
+  },
+  "records": [
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260725_142227.jpg",
+      "source_label": "annotations\\image_rgb_20260725_142227.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_094723.jpg",
+      "source_label": "annotations\\image_rgb_20260727_094723.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_094733.jpg",
+      "source_label": "annotations\\image_rgb_20260727_094733.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_094928.jpg",
+      "source_label": "annotations\\image_rgb_20260727_094928.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095049.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095049.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095144.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095144.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095214.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095214.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095225.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095225.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095253.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095253.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095317.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095317.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095427.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095427.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095538.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095538.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095642.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095642.txt",
+      "split": "train",
+      "objects": {
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095706.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095706.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_095807.jpg",
+      "source_label": "annotations\\image_rgb_20260727_095807.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_101727.jpg",
+      "source_label": "annotations\\image_rgb_20260727_101727.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_102300.jpg",
+      "source_label": "annotations\\image_rgb_20260727_102300.txt",
+      "split": "train",
+      "objects": {
+        "2": 1,
+        "0": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_102349.jpg",
+      "source_label": "annotations\\image_rgb_20260727_102349.txt",
+      "split": "train",
+      "objects": {
+        "0": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_115308.jpg",
+      "source_label": "annotations\\image_rgb_20260727_115308.txt",
+      "split": "train",
+      "objects": {
+        "2": 1,
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_115419.jpg",
+      "source_label": "annotations\\image_rgb_20260727_115419.txt",
+      "split": "train",
+      "objects": {
+        "2": 1,
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_115728.jpg",
+      "source_label": "annotations\\image_rgb_20260727_115728.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_115817.jpg",
+      "source_label": "annotations\\image_rgb_20260727_115817.txt",
+      "split": "train",
+      "objects": {
+        "2": 1,
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_115955.jpg",
+      "source_label": "annotations\\image_rgb_20260727_115955.txt",
+      "split": "train",
+      "objects": {
+        "2": 1,
+        "0": 1
+      }
+    },
+    {
+      "source_image": "raw\\football\\image_rgb_20260727_120016.jpg",
+      "source_label": "annotations\\image_rgb_20260727_120016.txt",
+      "split": "train",
+      "objects": {
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_142021.jpg",
+      "source_label": "annotations\\image_rgb_20260727_142021.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_143320.jpg",
+      "source_label": "annotations\\image_rgb_20260727_143320.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_144733.jpg",
+      "source_label": "annotations\\image_rgb_20260727_144733.txt",
+      "split": "train",
+      "objects": {
+        "2": 1,
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_144933.jpg",
+      "source_label": "annotations\\image_rgb_20260727_144933.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_151835.jpg",
+      "source_label": "annotations\\image_rgb_20260727_151835.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152143.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152143.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152405.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152405.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152416.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152416.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152425.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152425.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152503.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152503.txt",
+      "split": "train",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152523.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152523.txt",
+      "split": "train",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152628.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152628.txt",
+      "split": "train",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152711.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152711.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152724.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152724.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152733.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152733.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152836.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152836.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_152932.jpg",
+      "source_label": "annotations\\image_rgb_20260727_152932.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_162446.jpg",
+      "source_label": "annotations\\image_rgb_20260727_162446.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_162549.jpg",
+      "source_label": "annotations\\image_rgb_20260727_162549.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_162624.jpg",
+      "source_label": "annotations\\image_rgb_20260727_162624.txt",
+      "split": "train",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_163222.jpg",
+      "source_label": "annotations\\image_rgb_20260727_163222.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_164026.jpg",
+      "source_label": "annotations\\image_rgb_20260727_164026.txt",
+      "split": "train",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260727_164139.jpg",
+      "source_label": "annotations\\image_rgb_20260727_164139.txt",
+      "split": "train",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_171146.jpg",
+      "source_label": "annotations\\image_rgb_20260727_171146.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_171250.jpg",
+      "source_label": "annotations\\image_rgb_20260727_171250.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "2": 1,
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_171405.jpg",
+      "source_label": "annotations\\image_rgb_20260727_171405.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260727_175430.jpg",
+      "source_label": "annotations\\image_rgb_20260727_175430.txt",
+      "split": "train",
+      "objects": {
+        "0": 2,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_090109.jpg",
+      "source_label": "annotations\\image_rgb_20260728_090109.txt",
+      "split": "val",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_090247.jpg",
+      "source_label": "annotations\\image_rgb_20260728_090247.txt",
+      "split": "val",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_093232.jpg",
+      "source_label": "annotations\\image_rgb_20260728_093232.txt",
+      "split": "val",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_094459.jpg",
+      "source_label": "annotations\\image_rgb_20260728_094459.txt",
+      "split": "val",
+      "objects": {
+        "1": 1,
+        "2": 2
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_094753.jpg",
+      "source_label": "annotations\\image_rgb_20260728_094753.txt",
+      "split": "val",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_095200.jpg",
+      "source_label": "annotations\\image_rgb_20260728_095200.txt",
+      "split": "val",
+      "objects": {
+        "1": 1
+      }
+    },
+    {
+      "source_image": "raw\\cola\\image_rgb_20260728_095324.jpg",
+      "source_label": "annotations\\image_rgb_20260728_095324.txt",
+      "split": "val",
+      "objects": {
+        "1": 1,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260728_101354.jpg",
+      "source_label": "annotations\\image_rgb_20260728_101354.txt",
+      "split": "val",
+      "objects": {
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260728_102723.jpg",
+      "source_label": "annotations\\image_rgb_20260728_102723.txt",
+      "split": "val",
+      "objects": {
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260728_103150.jpg",
+      "source_label": "annotations\\image_rgb_20260728_103150.txt",
+      "split": "val",
+      "objects": {
+        "0": 2,
+        "2": 1
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260728_104007.jpg",
+      "source_label": "annotations\\image_rgb_20260728_104007.txt",
+      "split": "val",
+      "objects": {
+        "0": 2
+      }
+    },
+    {
+      "source_image": "raw\\obstacle\\image_rgb_20260728_104403.jpg",
+      "source_label": "annotations\\image_rgb_20260728_104403.txt",
+      "split": "val",
+      "objects": {
+        "0": 2
+      }
+    }
+  ]
+}
