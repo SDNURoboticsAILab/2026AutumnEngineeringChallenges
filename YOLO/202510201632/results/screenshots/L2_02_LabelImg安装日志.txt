@@ -1,0 +1,20 @@
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProxyError('Cannot connect to proxy.', timeout('_ssl.c:1114: The handshake operation timed out'))': /simple/labelimg/
+Collecting labelImg==1.8.6
+  Downloading labelImg-1.8.6.tar.gz (247 kB)
+Collecting pyqt5
+  Downloading PyQt5-5.15.11-cp38-abi3-win_amd64.whl (6.9 MB)
+Collecting lxml
+  Downloading lxml-6.1.3-cp38-cp38-win_amd64.whl (4.0 MB)
+Collecting PyQt5-sip<13,>=12.15
+  Downloading PyQt5_sip-12.15.0-cp38-cp38-win_amd64.whl (59 kB)
+Collecting PyQt5-Qt5<5.16.0,>=5.15.2
+  Downloading PyQt5_Qt5-5.15.2-py3-none-win_amd64.whl (50.1 MB)
+Using legacy 'setup.py install' for labelImg, since package 'wheel' is not installed.
+Installing collected packages: PyQt5-sip, PyQt5-Qt5, pyqt5, lxml, labelImg
+    Running setup.py install for labelImg: started
+    Running setup.py install for labelImg: finished with status 'done'
+Successfully installed PyQt5-Qt5-5.15.2 PyQt5-sip-12.15.0 labelImg-1.8.6 lxml-6.1.3 pyqt5-5.15.11
+WARNING: You are using pip version 21.1.1; however, version 25.0.1 is available.
+You should consider upgrading via the 'G:\YOLO学习项目\.venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+LabelImg installation complete.
