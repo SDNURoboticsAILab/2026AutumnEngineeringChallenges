@@ -1,0 +1,15 @@
+素材下载与检查结果
+来源：https://github.com/SDNURoboticsAILab/2026AutumnEngineeringChallenges
+固定版本：7600ea515c79aacde16f94885fd4d7fc1ace3556
+
+obstacle: 316 张
+cola: 293 张
+football: 340 张
+合计：949 张
+原始体积：108.20 MiB
+无法读取：0 张
+精确重复组：0
+分辨率：{'640x480': 948, '640x400': 1}
+
+所有文件均已按 GitHub Git blob SHA-1 校验，完成图片解码检查。
+原始图片保存在 raw 文件夹；原图保持不变，尚未划分训练集或生成标签。

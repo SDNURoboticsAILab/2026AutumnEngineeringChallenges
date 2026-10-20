@@ -1,0 +1,38 @@
+[
+  {
+    "file": "image_rgb_20260727_095244.jpg",
+    "sha256": "80aae5697f3ebb1fa57ece89dc3a8affb50c995e045d0266409fba2964a9f021"
+  },
+  {
+    "file": "image_rgb_20260727_095750.jpg",
+    "sha256": "ee2d3c533d355f6064804a87ef5b9a6c1c33270ff1206231b0712f591e9cc4b6"
+  },
+  {
+    "file": "image_rgb_20260727_104017.jpg",
+    "sha256": "55c8a67f190b1661b808f9374911f3c29c0a2f6711b829acd72c0fde4ec85016"
+  },
+  {
+    "file": "image_rgb_20260727_143434.jpg",
+    "sha256": "b9a9ac579310d6ebf3c95dcc697111cae9ecaa6d5be32cbdae004a32d1d3c758"
+  },
+  {
+    "file": "image_rgb_20260727_163354.jpg",
+    "sha256": "5fbc845d6d55f0e2906e17773c1304827795db57d7397ff86abd41b4b29b9d82"
+  },
+  {
+    "file": "image_rgb_20260727_175804.jpg",
+    "sha256": "965be2c6bcd566ac015cc1c608aed4d2f159315720ecb2437ef6ae648f4e6fbf"
+  },
+  {
+    "file": "image_rgb_20260728_085951.jpg",
+    "sha256": "f52f599ea3c7ca5e326423aef110424441a4fe446888b441e9a29186f57656c1"
+  },
+  {
+    "file": "image_rgb_20260728_090534.jpg",
+    "sha256": "071155344021d6156469a48d7e027369940e2170c64fb36f593e1942b5d9495b"
+  },
+  {
+    "file": "image_rgb_20260728_102529.jpg",
+    "sha256": "90fb7fb24b94b08b5a249c7a8163f9b735af81b8876cdb747cef13660f8d2c95"
+  }
+]
