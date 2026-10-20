@@ -21,8 +21,8 @@
   },
   {
     "path": "PR说明草稿.md",
-    "sha256": "5f560ac258fff0083649a8ccc0f8a16adfc766e0389c257c0dbd2646c8db3243",
-    "bytes": 929
+    "sha256": "83b7b5b44d2e15708762e6a95c2402b04daf4fcc7bada6ff22f1a99800df5524",
+    "bytes": 921
   },
   {
     "path": "README.md",
@@ -31,8 +31,8 @@
   },
   {
     "path": "report.md",
-    "sha256": "ae1c5ee1b908a6cb08a7671193fd7347f318b8618317955af227cdce2d21ca9c",
-    "bytes": 11039
+    "sha256": "152cd224807de2a09418c5b7d1b6f12a00b84c09d6f9ec8ba0ef4b0e41157f88",
+    "bytes": 11052
   },
   {
     "path": "requirements-lock.txt",
@@ -51,13 +51,13 @@
   },
   {
     "path": "提交检查清单.md",
-    "sha256": "760321f1033dfd95a56d7757a45527564d30376d17cc518266af19c4100c6477",
-    "bytes": 731
+    "sha256": "f08a778a4a3be0f87de93e5f3af707910bec5aa2e351e8d8d9f9ffe5a2da41cf",
+    "bytes": 783
   },
   {
     "path": "材料检查结果.txt",
-    "sha256": "f66460dd80f90c1fb9a6246218d9b50c0e92c4a782ae5d34918889213d647855",
-    "bytes": 171
+    "sha256": "6ae1a6f31c557706b95f4fec429dc4e0e54cf5ae8c01a072cdb5b60c81a1e3a3",
+    "bytes": 194
   },
   {
     "path": "dataset/images/train/image_rgb_20260725_142227.jpg",
@@ -903,6 +903,16 @@
     "path": "results/screenshots/L1_03_环境版本验证.png",
     "sha256": "03994b980622dbcd9587a45f02af8bb20149f75386760c794998bf657dc160c7",
     "bytes": 17691
+  },
+  {
+    "path": "results/screenshots/L1_04_labels目录结构.png",
+    "sha256": "a5349f4bdad6a982dc1983ec79da94ce1a2fc39ba85f091a9e03eb2613be6ccb",
+    "bytes": 8989
+  },
+  {
+    "path": "results/screenshots/L1_05_images目录结构.png",
+    "sha256": "1ccc42303c8f8c75db55bddaf3172fb29ad74ada03015e9c46d156232c160cb3",
+    "bytes": 9613
   },
   {
     "path": "results/screenshots/L2_01_LabelImg安装报错.txt",
