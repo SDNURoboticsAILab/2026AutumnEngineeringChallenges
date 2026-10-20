@@ -4,7 +4,7 @@
 
 ## 1. 目标与实际完成范围
 
-本项目练习从数据整理、目标标注到训练、验证和新图片检测的工程流程。完成 Level 1 至 Level 4 的主要操作，仍需补充目录结构截图；Level 5 未开展。功能完成情况不等于仓库已验收或 PR 已合并。
+本项目练习从数据整理、目标标注到训练、验证和新图片检测的工程流程。完成 Level 1 至 Level 4 的主要操作，已补充本人提供的目录结构截图；Level 5 未开展。功能完成情况不等于仓库已验收或 PR 已合并。
 
 本人的三类目标约定：
 
@@ -60,7 +60,11 @@
 
 比例约 81%:19%。两个集合都包含三类目标，文件哈希检查没有完全相同的图跨集合。原图与原标签保持不变，dataset/ 内为副本。划分对应关系见 provenance/dataset_split.json。
 
-**待补真实截图：**请本人在文件资源管理器中展开 dataset/images/train、val 与 dataset/labels/train、val，截图保存为 `results/screenshots/L1_04_数据集目录结构.png`。本报告不使用渲染目录图代替操作截图。
+本人提供的文件资源管理器截图如下，分别展示图片和标签目录中的 train、val。
+
+![图片目录结构](results/screenshots/L1_05_images目录结构.png)
+
+![标签目录结构](results/screenshots/L1_04_labels目录结构.png)
 
 ## 3. Level 2：手工目标标注
 
